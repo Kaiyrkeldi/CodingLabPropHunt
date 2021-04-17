@@ -28,6 +28,24 @@ public class ButtonHandlers : MonoBehaviour {
 				case "SpawnMugButton":
 					button.onClick.AddListener(() => SpawnMug());
 					break;
+<<<<<<< HEAD
+=======
+				case "SpawnCupButton":
+					button.onClick.AddListener(() => SpawnCup());
+					break;
+				case "SpawnSkinButton":
+					button.onClick.AddListener(() => SpawnSkin());
+					break;
+				case "SpawnBoxButton":
+					button.onClick.AddListener(() => SpawnBox());
+					break;
+				case "SpawnChairButton":
+					button.onClick.AddListener(() => SpawnChair());
+					break;
+				case "SpawnPillowButton":
+					button.onClick.AddListener(() => SpawnPillow());
+					break;
+>>>>>>> 399dc667145c7b86349a0c5f3429be9c6a8bf1cf
 			}
 		}
 	}
@@ -62,7 +80,10 @@ public class ButtonHandlers : MonoBehaviour {
 		ClientScene.AddPlayer(connection, 0, msg);
 		spawnButtons.SetActive(false);
 	}
+<<<<<<< HEAD
 
+=======
+>>>>>>> 399dc667145c7b86349a0c5f3429be9c6a8bf1cf
 	void SpawnMug()
 	{
 		PlayerInfoMessage msg = new PlayerInfoMessage(PlayerClass.mug);
@@ -71,5 +92,49 @@ public class ButtonHandlers : MonoBehaviour {
 		ClientScene.AddPlayer(connection, 0, msg);
 		spawnButtons.SetActive(false);
 	}
+<<<<<<< HEAD
+=======
+	void SpawnCup()
+	{
+		PlayerInfoMessage msg = new PlayerInfoMessage(PlayerClass.cup);
+		var connection = NetworkManager.singleton.client.connection;
+		Debug.Log(connection);
+		ClientScene.AddPlayer(connection, 0, msg);
+		spawnButtons.SetActive(false);
+	}
+	void SpawnSkin()
+	{
+		PlayerInfoMessage msg = new PlayerInfoMessage(PlayerClass.skin);
+		var connection = NetworkManager.singleton.client.connection;
+		Debug.Log(connection);
+		ClientScene.AddPlayer(connection, 0, msg);
+		spawnButtons.SetActive(false);
+	}
+	void SpawnBox()
+	{
+		PlayerInfoMessage msg = new PlayerInfoMessage(PlayerClass.box);
+		var connection = NetworkManager.singleton.client.connection;
+		Debug.Log(connection);
+		ClientScene.AddPlayer(connection, 0, msg);
+		spawnButtons.SetActive(false);
+	}
+	void SpawnChair()
+	{
+		PlayerInfoMessage msg = new PlayerInfoMessage(PlayerClass.chair);
+		var connection = NetworkManager.singleton.client.connection;
+		Debug.Log(connection);
+		ClientScene.AddPlayer(connection, 0, msg);
+		spawnButtons.SetActive(false);
+	}
+	void SpawnPillow()
+	{
+		PlayerInfoMessage msg = new PlayerInfoMessage(PlayerClass.pillow);
+		var connection = NetworkManager.singleton.client.connection;
+		Debug.Log(connection);
+		ClientScene.AddPlayer(connection, 0, msg);
+		spawnButtons.SetActive(false);
+	}
+
+>>>>>>> 399dc667145c7b86349a0c5f3429be9c6a8bf1cf
 
 }

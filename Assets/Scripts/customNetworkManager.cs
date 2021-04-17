@@ -11,7 +11,11 @@ public class customNetworkManager : NetworkManager
 	private GameObject SpawnButtons;
 	private GameObject blackScreen;
 
+<<<<<<< HEAD
 	public GameObject firstPlayerPrefab, secondPlayerPrefab, propVegetableBasket,basket,mug;
+=======
+	public GameObject firstPlayerPrefab, secondPlayerPrefab, propVegetableBasket,basket,mug,cup,skin,box,chair,pillow;
+>>>>>>> 399dc667145c7b86349a0c5f3429be9c6a8bf1cf
 
 	void Awake()
 	{
@@ -69,6 +73,29 @@ public class customNetworkManager : NetworkManager
 				playerPrefab = mug;
 				return GameObject.Instantiate(playerPrefab, new Vector3(0, 1, 50), Quaternion.identity);
 				break;
+<<<<<<< HEAD
+=======
+			case PlayerClass.cup:
+				playerPrefab = cup;
+				return GameObject.Instantiate(playerPrefab, new Vector3(0, 1, 50), Quaternion.identity);
+				break;
+			case PlayerClass.skin:
+				playerPrefab = skin;
+				return GameObject.Instantiate(playerPrefab, new Vector3(0, 1, 50), Quaternion.identity);
+				break;	
+			case PlayerClass.box:
+				playerPrefab = box;
+				return GameObject.Instantiate(playerPrefab, new Vector3(0, 1, 50), Quaternion.identity);
+				break;
+			case PlayerClass.chair:
+				playerPrefab = chair;
+				return GameObject.Instantiate(playerPrefab, new Vector3(0, 1, 50), Quaternion.identity);
+				break;
+			case PlayerClass.pillow:
+				playerPrefab = pillow;
+				return GameObject.Instantiate(playerPrefab, new Vector3(0, 1, 50), Quaternion.identity);
+				break;
+>>>>>>> 399dc667145c7b86349a0c5f3429be9c6a8bf1cf
 		}
 		return GameObject.Instantiate(playerPrefab, new Vector3(0, 0, 0), Quaternion.identity);
 

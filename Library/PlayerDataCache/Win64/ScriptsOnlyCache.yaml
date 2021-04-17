@@ -5,6 +5,10 @@ ScriptsOnlyBuild:
     - Bullet
     - ButtonHandlers
     - DeathZone
+<<<<<<< HEAD
+=======
+    - FlyCamera
+>>>>>>> 399dc667145c7b86349a0c5f3429be9c6a8bf1cf
     - GameManager
     - GameManager_References
     - Player
@@ -139,6 +143,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2888}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 2896}
     - Class: 114
       Script: {instanceID: 3034}
@@ -162,6 +167,33 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3736}
     - Class: 114
       Script: {instanceID: 3826}
+=======
+      Script: {instanceID: 2894}
+    - Class: 114
+      Script: {instanceID: 2898}
+    - Class: 114
+      Script: {instanceID: 3036}
+    - Class: 114
+      Script: {instanceID: 3098}
+    - Class: 114
+      Script: {instanceID: 3122}
+    - Class: 114
+      Script: {instanceID: 3238}
+    - Class: 114
+      Script: {instanceID: 3250}
+    - Class: 114
+      Script: {instanceID: 3272}
+    - Class: 114
+      Script: {instanceID: 3292}
+    - Class: 114
+      Script: {instanceID: 3480}
+    - Class: 114
+      Script: {instanceID: 3656}
+    - Class: 114
+      Script: {instanceID: 3738}
+    - Class: 114
+      Script: {instanceID: 3828}
+>>>>>>> 399dc667145c7b86349a0c5f3429be9c6a8bf1cf
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -283,7 +315,11 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
+<<<<<<< HEAD
       Hash: d2113349f4a180f01cead615aa4b0f21
+=======
+      Hash: b6c9f648d694f21b6e9a9afb8a4f8209
+>>>>>>> 399dc667145c7b86349a0c5f3429be9c6a8bf1cf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: customNetworkManager
@@ -619,7 +655,17 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
+<<<<<<< HEAD
       Hash: 207100f02e713c4ed34e3b0c93da5339
+=======
+      Hash: b34954b0b484058a8e384a2463794a4b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FlyCamera
+  - hash:
+      serializedVersion: 2
+      Hash: b9db9718fd9d0487a39a610964098f39
+>>>>>>> 399dc667145c7b86349a0c5f3429be9c6a8bf1cf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager_References
@@ -842,4 +888,8 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
+<<<<<<< HEAD
   playerPath: D:/Study/3rd trimestr/Coding LAB/testgame/TEST.exe
+=======
+  playerPath: C:/Users/nurik/Desktop/Time to die ;)/TEST.exe
+>>>>>>> 399dc667145c7b86349a0c5f3429be9c6a8bf1cf
