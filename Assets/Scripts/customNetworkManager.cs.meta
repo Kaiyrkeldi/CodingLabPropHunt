@@ -3,7 +3,19 @@ guid: 01fc14615a731d84195cd0b3dadbb711
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - m_PlayerPrefab: {instanceID: 0}
+  - matchMaker: {instanceID: 0}
+  - firstPlayerPrefab: {instanceID: 0}
+  - secondPlayerPrefab: {instanceID: 0}
+  - propVegetableBasket: {instanceID: 0}
+  - basket: {instanceID: 0}
+  - mug: {instanceID: 0}
+  - cup: {instanceID: 0}
+  - skin: {instanceID: 0}
+  - box: {instanceID: 0}
+  - chair: {instanceID: 0}
+  - pillow: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -7,9 +7,11 @@ using UnityEngine.EventSystems;
 
 public class PropRespawn : NetworkBehaviour
 {
+    PropDeath prop;
     private Player healthScript;
     private GameObject respawnButton;
     public GameObject spawnpoint;
+    public GameObject secondPlayerPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,17 +27,13 @@ public class PropRespawn : NetworkBehaviour
     void SetRespawnButton()
     {
             respawnButton = GameObject.Find("GM").GetComponent<GameManager_References>().RespawnButton;
-            respawnButton.GetComponent<Button>().onClick.AddListener(CommenceRespawn);
+            respawnButton.GetComponent<Button>().onClick.AddListener(EnablePlayer);
             respawnButton.SetActive(false);
     }
 
     void EnablePlayer()
     {
-        GetComponent<CharacterController>().enabled = true;
-        Renderer[] renderers = GetComponentsInChildren<Renderer>();
-        foreach (Renderer ren in renderers)
-            ren.enabled = true;
-        GetComponent<Rigidbody>().transform.position = spawnpoint.transform.position;
+        healthScript.isDead = false;
 
         if (isLocalPlayer)
         {
@@ -54,3 +52,5 @@ public class PropRespawn : NetworkBehaviour
         healthScript.ResetHealth();
     }
 }
+
+

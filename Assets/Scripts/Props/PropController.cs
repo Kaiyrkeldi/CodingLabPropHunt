@@ -6,7 +6,7 @@ using UnityEngine;
 public class PropController : MonoBehaviour
 {
     [SerializeField]
-    private float speed = 5;
+    public float speed = 5;
     [SerializeField]
     private float lookSpeed = 3f;
     
