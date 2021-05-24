@@ -8,6 +8,7 @@ public class PropMotor : MonoBehaviour
 
     [SerializeField]
     private Camera cam;
+    public Camera flyCamera;
     private Rigidbody rb;
     private Vector3 velocity = Vector3.zero;
     private Vector3 rotation = Vector3.zero;
@@ -16,11 +17,18 @@ public class PropMotor : MonoBehaviour
     public float jumpForce = 2f;
     private bool isGrounded;
     private bool isBehind = false;
+    public static bool wallHack = false;
 
     void Start()
     {
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Prop");
+        foreach (GameObject player in players)
+        {
+            SetLayerRecursively(player, 7);
+        }
         rb = GetComponent<Rigidbody>();
         jump = new Vector3(0.0f, 2.0f, 0.0f);
+        flyCamera.enabled = false;
     }
     void OnCollisionStay()
     {
@@ -68,15 +76,11 @@ public class PropMotor : MonoBehaviour
             player.TakeDamage(100f);
         }
 
-        if (Input.GetKeyDown(KeyCode.T) && !isBehind)
+        if (Input.GetKeyDown(KeyCode.T) && !isBehind && wallHack)
         {
             isBehind = true;
             SetLayerRecursively(GameObject.FindGameObjectWithTag("Player"), 8);
-        }
-        else if(Input.GetKeyDown(KeyCode.T) && isBehind)
-        {
-            SetLayerRecursively(GameObject.FindGameObjectWithTag("Player"), 7);
-            isBehind = false;
+            Invoke("WallHackOff", 2.0f);
         }
 
     }
@@ -114,5 +118,16 @@ public class PropMotor : MonoBehaviour
             }
             SetLayerRecursively(child.gameObject, newLayer);
         }
+    }
+
+    void WallHackOff()
+    {
+        SetLayerRecursively(GameObject.FindGameObjectWithTag("Player"), 7);
+        //isBehind = false;
+        Invoke("SetBH", 10.0f);
+    }
+    void SetBH()
+    {
+        isBehind = false;
     }
 }

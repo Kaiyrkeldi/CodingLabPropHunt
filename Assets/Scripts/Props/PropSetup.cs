@@ -10,7 +10,6 @@ public class PropSetup : NetworkBehaviour
 {
     private string remoteLayer = "RemotePlayer";
     private Camera sceneCamera;
-    public Camera flyCamera;
     GameObject health;
 
     [SerializeField]
@@ -33,11 +32,6 @@ public class PropSetup : NetworkBehaviour
                 sceneCamera.gameObject.SetActive(false);
         }
         health = GameObject.Find("healthText");
-        if (isLocalPlayer)
-        {
-            health.SetActive(true);
-        }
-        flyCamera.enabled = false;
     }
     void Update()
     {

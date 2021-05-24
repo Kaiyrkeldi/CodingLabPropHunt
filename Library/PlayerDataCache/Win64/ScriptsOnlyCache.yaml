@@ -13,6 +13,7 @@ ScriptsOnlyBuild:
     - GameManager_References
     - GameTimer
     - HorseMovement
+    - HunterSpawn
     - MouseLook
     - Nearest
     - NetworkPlayer
@@ -78,14 +79,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
-    Unity.Timeline.Editor.dll:
-    - TimelinePreferences
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -333,6 +326,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7276}
     - Class: 114
       Script: {instanceID: 7304}
+    - Class: 114
+      Script: {instanceID: 1748502}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1370,7 +1365,7 @@ ScriptsOnlyBuild:
     className: SimpleMouseRotator
   - hash:
       serializedVersion: 2
-      Hash: 3ec59a59d6d14843729fc947e2986bfc
+      Hash: b93532430f519ca6f8a812b1c210423c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PropSetup
@@ -1958,7 +1953,7 @@ ScriptsOnlyBuild:
     className: NetworkDiscovery
   - hash:
       serializedVersion: 2
-      Hash: 2967ab0d4eabb71fa1777f5c70f9eb3c
+      Hash: c13d709138e404b56a7a40be60c6f278
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PropMotor
@@ -2156,7 +2151,7 @@ ScriptsOnlyBuild:
     className: Quit
   - hash:
       serializedVersion: 2
-      Hash: ac44f617eee10e95c23ec2c5b3bccc35
+      Hash: 14b3e6a9e144e6a68d30af75e381ad03
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MouseLook
@@ -2172,6 +2167,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: d3b9b4997c27bd62bb29f9d114da9e63
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HunterSpawn
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene (5).unity

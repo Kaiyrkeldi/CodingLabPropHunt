@@ -22,6 +22,7 @@ public class Player : NetworkBehaviour
     public delegate void RespawnDelegate();
     public event RespawnDelegate EventRespawn;
 
+
     void Awake()
     {
         currHealth = maxHealth;
@@ -34,10 +35,13 @@ public class Player : NetworkBehaviour
     }
     void Start()
     {
+        GameObject.Find("GM").GetComponent<GameManager_References>().hud.SetActive(true);
         health = GameObject.Find("HUD/Health/Bar").transform;
         healthText = GameObject.Find("HUD/Health/healthText").GetComponent<Text>();
         hud = GameObject.Find("HUD");
         SetHealth();
+        GameObject.Find("timerText").GetComponent<GameTimer>().timer = 90;
+
     }
     void Update()
     {
@@ -100,4 +104,5 @@ public class Player : NetworkBehaviour
     {
         currHealth = maxHealth;
     }
+
 }

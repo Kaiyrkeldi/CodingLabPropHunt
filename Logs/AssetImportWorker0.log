@@ -15,11 +15,11 @@ D:/Programs/Unity/Unity Editor/TEST
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49857
+60456
 Successfully changed project path to: D:/Programs/Unity/Unity Editor/TEST
 D:/Programs/Unity/Unity Editor/TEST
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 81.36 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 120.40 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.2f1 (8fd9074bf66c)
 [Subsystems] Discovering subsystems at path D:/Programs/Unity/Unity Editor/2020.3.2f1/Editor/Data/Resources/UnitySubsystems
@@ -30,129 +30,137 @@ Direct3D:
     Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f91)
     Vendor:   
     VRAM:     3962 MB
-    Driver:   27.21.14.6172
+    Driver:   27.21.14.6647
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
 Mono path[0] = 'D:/Programs/Unity/Unity Editor/2020.3.2f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Programs/Unity/Unity Editor/2020.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Programs/Unity/Unity Editor/2020.3.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56848
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56584
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Programs/Unity/Unity Editor/2020.3.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/Programs/Unity/Unity Editor/2020.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001100 seconds.
+Registered in 0.001157 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 81.44 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 135.09 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.429 seconds
+- Completed reload, in  3.186 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002704 seconds.
+Registered in 0.002636 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 224.90 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 123.51 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.788 seconds
+- Completed reload, in  2.570 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 13.40 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 1.43 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3016 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 169.4 MB.
-System memory in use after: 169.2 MB.
+Unloading 3240 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 178.9 MB.
+System memory in use after: 178.8 MB.
 
-Unloading 113 unused Assets to reduce memory usage. Loaded Objects now: 3479.
-Total: 23.655200 ms (FindLiveObjects: 3.998200 ms CreateObjectMapping: 0.511000 ms MarkObjects: 7.238100 ms  DeleteObjects: 11.808100 ms)
+Unloading 130 unused Assets to reduce memory usage. Loaded Objects now: 3701.
+Total: 11.495600 ms (FindLiveObjects: 0.539800 ms CreateObjectMapping: 0.422200 ms MarkObjects: 8.333300 ms  DeleteObjects: 2.192400 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts/GameTimer.cs
-  artifactKey: Guid(e660eccaab987cf408d362bbc010cd5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/GameTimer.cs using Guid(e660eccaab987cf408d362bbc010cd5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '560e69688d60e9023fc4a1a0d579b7e3') in 0.076804 seconds
-  Import took 0.108491 seconds .
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bea4a88b1dc0ae37941541433f7977b') in 0.702467 seconds
+  Import took 0.718024 seconds .
 
 ========================================================================
 Received Prepare
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 40.67 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 4.01 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 100.2 MB.
-System memory in use after: 100.1 MB.
+Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 124.6 MB.
+System memory in use after: 124.4 MB.
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3479.
-Total: 167.047400 ms (FindLiveObjects: 101.124200 ms CreateObjectMapping: 17.446400 ms MarkObjects: 36.077200 ms  DeleteObjects: 12.379700 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 9970.677364 seconds.
-  path: Assets/Scripts/Nearest.cs
-  artifactKey: Guid(a8e5b44cfcd68e447b74378f7a9cd1c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Nearest.cs using Guid(a8e5b44cfcd68e447b74378f7a9cd1c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a3b7a54072c848fb49fec6a3acc565b') in 0.026624 seconds
-  Import took 0.354580 seconds .
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3775.
+Total: 5.552800 ms (FindLiveObjects: 0.677900 ms CreateObjectMapping: 0.236500 ms MarkObjects: 4.184500 ms  DeleteObjects: 0.451900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 94.861843 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '930afecfbd6dfd9b3ebd2ffa81a14925') in 0.107730 seconds
-  Import took 0.113908 seconds .
+  Time since last request: 22.960773 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22ce812b9cdb57fbcc8378e029f1fd5c') in 0.183533 seconds
+  Import took 0.193042 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 169.792767 seconds.
-  path: Assets/Scenes/SampleScene (5).unity
-  artifactKey: Guid(62c14e182da3175498eab5768b121b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene (5).unity using Guid(62c14e182da3175498eab5768b121b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1595b75a849e412f58b0ecca996cda53') in 0.004539 seconds
-  Import took 0.011368 seconds .
+  Time since last request: 12.890891 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b55a38a1179007282f9a44de5b2d8641') in 0.133185 seconds
+  Import took 0.142867 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.478752 seconds.
-  path: Assets/Scenes/SampleScene (3).unity
-  artifactKey: Guid(dfd3f5b642784bf49b56aa89dcd8ca6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene (3).unity using Guid(dfd3f5b642784bf49b56aa89dcd8ca6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7261920d5d1f67fde7582e8c70ada5e3') in 0.003058 seconds
-  Import took 0.009952 seconds .
+  Time since last request: 27.863584 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7ba54ad0ad5e65196507c3177879cac') in 0.123059 seconds
+  Import took 0.133729 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.655175 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed14d3db74cfc3055651ccd27a150391') in 0.003031 seconds
-  Import took 0.011179 seconds .
+  Time since last request: 7.026463 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e7271924bfa7023a2399a1df105700f') in 0.133180 seconds
+  Import took 0.144002 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.348673 seconds.
-  path: Assets/Scenes/SampleScene (5).unity
-  artifactKey: Guid(62c14e182da3175498eab5768b121b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene (5).unity using Guid(62c14e182da3175498eab5768b121b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d1fb0b4fab6714430e8b4495bf94903') in 0.006283 seconds
-  Import took 0.013085 seconds .
+  Time since last request: 3.270887 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5621d79633baffe21dfab3e60ddbee2f') in 0.126819 seconds
+  Import took 0.145184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.544985 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a63e2e03c095694c82c8aa7d85e65a71') in 0.117709 seconds
+  Import took 0.131192 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.273999 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eee824410668765dfb49d8a9ed57192') in 0.115251 seconds
+  Import took 0.124207 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002462 seconds.
+Registered in 0.003169 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.88 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -167,186 +175,84 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.091 seconds
+- Completed reload, in  1.104 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.78 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2841 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 156.4 MB.
-System memory in use after: 156.3 MB.
+Unloading 3062 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 184.3 MB.
+System memory in use after: 184.2 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3482.
-Total: 6.427300 ms (FindLiveObjects: 0.513700 ms CreateObjectMapping: 0.199100 ms MarkObjects: 4.662200 ms  DeleteObjects: 1.049400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002168 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.83 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.850 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2841 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 156.5 MB.
-System memory in use after: 156.3 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3485.
-Total: 3.236700 ms (FindLiveObjects: 0.400400 ms CreateObjectMapping: 0.199800 ms MarkObjects: 2.182200 ms  DeleteObjects: 0.452800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001981 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.825 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2841 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 156.5 MB.
-System memory in use after: 156.4 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3488.
-Total: 3.565000 ms (FindLiveObjects: 0.285600 ms CreateObjectMapping: 0.136600 ms MarkObjects: 2.716400 ms  DeleteObjects: 0.425200 ms)
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3751.
+Total: 4.470600 ms (FindLiveObjects: 0.572100 ms CreateObjectMapping: 0.309000 ms MarkObjects: 3.139200 ms  DeleteObjects: 0.448900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 392.303963 seconds.
-  path: Assets/Scenes/SampleScene (5).unity
-  artifactKey: Guid(62c14e182da3175498eab5768b121b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene (5).unity using Guid(62c14e182da3175498eab5768b121b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '887c2ab0fac54a4ee70dde9d5e458566') in 0.006765 seconds
-  Import took 0.014076 seconds .
+  Time since last request: 43.953100 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7e63c1cd0a8c84cdb248e6a6edfb55e') in 0.268085 seconds
+  Import took 0.282785 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 65.628458 seconds.
-  path: Assets/Plugins/Overcooked - Main Menu SONG (1).mp3
-  artifactKey: Guid(71457cf7cc453454981169626990d446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/Overcooked - Main Menu SONG (1).mp3 using Guid(71457cf7cc453454981169626990d446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fac2387a188967d354abe59af308690') in 0.141487 seconds
-  Import took 0.148469 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.006213 seconds.
-  path: Assets/Plugins/Overcooked - Main Menu SONG (1).mp3
-  artifactKey: Guid(71457cf7cc453454981169626990d446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/Overcooked - Main Menu SONG (1).mp3 using Guid(71457cf7cc453454981169626990d446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fac2387a188967d354abe59af308690') in 0.005821 seconds
-  Import took 0.014641 seconds .
+  Time since last request: 4.299206 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8052ef67aa8798bc0092858531c621a6') in 0.137118 seconds
+  Import took 0.153249 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002634 seconds.
+Registered in 0.005561 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.93 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.161 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.07 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2841 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 159.0 MB.
-System memory in use after: 158.9 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3500.
-Total: 4.733000 ms (FindLiveObjects: 0.407000 ms CreateObjectMapping: 0.223200 ms MarkObjects: 3.526300 ms  DeleteObjects: 0.575100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003097 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.027 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.71 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2841 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 159.1 MB.
-System memory in use after: 158.9 MB.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3503.
-Total: 5.214900 ms (FindLiveObjects: 0.304100 ms CreateObjectMapping: 0.133600 ms MarkObjects: 3.542300 ms  DeleteObjects: 1.233400 ms)
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.080 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3062 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 184.5 MB.
+System memory in use after: 184.3 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3790.
+Total: 3.809700 ms (FindLiveObjects: 0.414500 ms CreateObjectMapping: 0.161700 ms MarkObjects: 2.531900 ms  DeleteObjects: 0.700300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.643356 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df7ed7b18df2557d1754fceff8581f91') in 0.362704 seconds
+  Import took 0.374769 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002021 seconds.
+Registered in 0.004696 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 1.11 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -361,38 +267,58 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.885 seconds
+- Completed reload, in  1.224 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2841 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 159.1 MB.
-System memory in use after: 159.0 MB.
+Unloading 3062 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 184.7 MB.
+System memory in use after: 184.5 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3506.
-Total: 3.293300 ms (FindLiveObjects: 0.369700 ms CreateObjectMapping: 0.170400 ms MarkObjects: 2.321100 ms  DeleteObjects: 0.430600 ms)
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3829.
+Total: 5.557000 ms (FindLiveObjects: 0.557600 ms CreateObjectMapping: 0.224400 ms MarkObjects: 3.966200 ms  DeleteObjects: 0.806700 ms)
 
 ========================================================================
-Received Prepare
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.60 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 103.2 MB.
-System memory in use after: 103.1 MB.
+Received Import Request.
+  Time since last request: 57.657866 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d3b2b8a978e19f6ddc5c2e9a5177aa8') in 0.300870 seconds
+  Import took 0.310968 seconds .
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3506.
-Total: 3.548200 ms (FindLiveObjects: 0.384400 ms CreateObjectMapping: 0.222000 ms MarkObjects: 2.493200 ms  DeleteObjects: 0.447200 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 71.233047 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '504fa3d6e5d3c640f1d3c9be07846068') in 0.128688 seconds
+  Import took 0.138243 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.306295 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33200a49d0194cb03d65c4c193429896') in 0.108890 seconds
+  Import took 0.120338 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.981585 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d0c0fdb7eebcf35f8876545552608e3') in 0.114158 seconds
+  Import took 0.129762 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003147 seconds.
+Registered in 0.003361 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.59 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 4.25 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -407,38 +333,42 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.688 seconds
+- Completed reload, in  2.400 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.69 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 1.13 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2841 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 159.1 MB.
-System memory in use after: 159.0 MB.
+Unloading 3062 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 184.8 MB.
+System memory in use after: 184.7 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3509.
-Total: 7.639900 ms (FindLiveObjects: 1.299400 ms CreateObjectMapping: 0.374000 ms MarkObjects: 5.217000 ms  DeleteObjects: 0.746400 ms)
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3868.
+Total: 10.134500 ms (FindLiveObjects: 3.458500 ms CreateObjectMapping: 0.581400 ms MarkObjects: 5.259800 ms  DeleteObjects: 0.828200 ms)
 
 ========================================================================
-Received Prepare
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.76 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 103.3 MB.
-System memory in use after: 103.1 MB.
+Received Import Request.
+  Time since last request: 113.259028 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4150bed08eca167c4a69c96b2cc491d1') in 0.310204 seconds
+  Import took 0.320107 seconds .
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3509.
-Total: 4.646000 ms (FindLiveObjects: 0.475100 ms CreateObjectMapping: 0.225200 ms MarkObjects: 3.468900 ms  DeleteObjects: 0.475100 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 9.045877 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89478858c7f2116d57d38e5925c2e848') in 0.163334 seconds
+  Import took 0.178696 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.007927 seconds.
+Registered in 0.003602 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -453,16 +383,376 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.930 seconds
+- Completed reload, in  1.425 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.05 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.77 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2841 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 159.1 MB.
-System memory in use after: 159.0 MB.
+Unloading 3062 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 185.0 MB.
+System memory in use after: 184.8 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3512.
-Total: 11.460100 ms (FindLiveObjects: 5.429800 ms CreateObjectMapping: 0.660100 ms MarkObjects: 4.577600 ms  DeleteObjects: 0.789700 ms)
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3907.
+Total: 6.608000 ms (FindLiveObjects: 0.641300 ms CreateObjectMapping: 0.213100 ms MarkObjects: 5.223000 ms  DeleteObjects: 0.528200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.236131 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f381919540ce08c08685e924e47a888e') in 0.269131 seconds
+  Import took 0.287031 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002617 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.08 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.230 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3062 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 185.1 MB.
+System memory in use after: 185.0 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3946.
+Total: 9.043900 ms (FindLiveObjects: 1.607100 ms CreateObjectMapping: 0.768800 ms MarkObjects: 5.390800 ms  DeleteObjects: 1.274200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.735722 seconds.
+  path: Assets/Prefabs/Players/Swat 1.prefab
+  artifactKey: Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 1.prefab using Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7732250a2bb07a7ca81cc8909c4a61a4') in 0.288368 seconds
+  Import took 0.301243 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.931536 seconds.
+  path: Assets/Prefabs/Players/Swat 1.prefab
+  artifactKey: Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 1.prefab using Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c57ec05ff8aff4c45653b11962b7b20') in 0.125980 seconds
+  Import took 0.135654 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.967019 seconds.
+  path: Assets/Prefabs/Players/Swat 1.prefab
+  artifactKey: Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 1.prefab using Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '869da1dd9e0b8645d07c65efd9c85282') in 0.096465 seconds
+  Import took 0.108506 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.182042 seconds.
+  path: Assets/Prefabs/Players/Swat 1.prefab
+  artifactKey: Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 1.prefab using Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17596c0c1a1728c22b09171ec65dc30c') in 0.115559 seconds
+  Import took 0.128884 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.941362 seconds.
+  path: Assets/Prefabs/Players/Swat 1.prefab
+  artifactKey: Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 1.prefab using Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69486a0c015dbbabaabbd4fdbab865d3') in 0.130051 seconds
+  Import took 0.142609 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.108781 seconds.
+  path: Assets/Prefabs/Players/Swat 1.prefab
+  artifactKey: Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 1.prefab using Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a745f70fa84eb6180a2458c3ad78a170') in 0.123367 seconds
+  Import took 0.133347 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.910297 seconds.
+  path: Assets/Prefabs/Players/Swat 1.prefab
+  artifactKey: Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 1.prefab using Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '945ca7fca3d15c99ef5fac5fa356dee6') in 0.128008 seconds
+  Import took 0.142939 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.418750 seconds.
+  path: Assets/Prefabs/Players/Swat 1.prefab
+  artifactKey: Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 1.prefab using Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '000a82432f245da1ffeea108740b34c7') in 0.135887 seconds
+  Import took 0.150354 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.780235 seconds.
+  path: Assets/Prefabs/Players/Swat 1.prefab
+  artifactKey: Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 1.prefab using Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '668d0642e0261783db48ce8c425466dd') in 0.093523 seconds
+  Import took 0.102677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.918254 seconds.
+  path: Assets/Prefabs/Players/Swat 1.prefab
+  artifactKey: Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 1.prefab using Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4cfe5330616b3a2f70bca5559aed07f') in 0.114103 seconds
+  Import took 0.126128 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.853014 seconds.
+  path: Assets/Prefabs/Players/Swat 1.prefab
+  artifactKey: Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 1.prefab using Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13560ff76e63aa3dd2a6c26b8a073b5a') in 0.121371 seconds
+  Import took 0.131570 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.642912 seconds.
+  path: Assets/Prefabs/Players/Swat 1.prefab
+  artifactKey: Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 1.prefab using Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8376abc0e4ed9e79d7e8247588ca1d4') in 0.125917 seconds
+  Import took 0.139875 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.181216 seconds.
+  path: Assets/Prefabs/Players/Swat 1.prefab
+  artifactKey: Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 1.prefab using Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b4e1478f50fc97ac2b4f596f4bcb22b') in 0.138965 seconds
+  Import took 0.155432 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.338562 seconds.
+  path: Assets/Prefabs/Players/Swat 1.prefab
+  artifactKey: Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 1.prefab using Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a006570df5b4fa6ef4d5ec4c49d5f5ac') in 0.118775 seconds
+  Import took 0.130742 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.281737 seconds.
+  path: Assets/Prefabs/Players/Swat 1.prefab
+  artifactKey: Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 1.prefab using Guid(913327b30fab2474caffc0383e41406f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdbd27f5fef75898c481f35af12c9b36') in 0.115927 seconds
+  Import took 0.129593 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002239 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.147 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3062 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 185.4 MB.
+System memory in use after: 185.3 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3985.
+Total: 5.105400 ms (FindLiveObjects: 0.680300 ms CreateObjectMapping: 0.268500 ms MarkObjects: 3.605900 ms  DeleteObjects: 0.547500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 713.338458 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf8d53e1fe107082c2ee681cda34cae9') in 0.408008 seconds
+  Import took 0.422089 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.486399 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cd6d0833c5384b7787d7828e519af5c') in 0.149908 seconds
+  Import took 0.166884 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.135882 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b6677a3182204301b16cbbe71816830') in 0.155771 seconds
+  Import took 0.170359 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.773887 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a1d458e4e5c55ad9f4b6886e05f185d') in 0.128387 seconds
+  Import took 0.153110 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.930688 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31e6452eff7843e2fc6bc5314209342a') in 0.135900 seconds
+  Import took 0.150555 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.758765 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2f502da0d33be48bd42542224ba320b') in 0.126479 seconds
+  Import took 0.135518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.175489 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a43a90e2c7cca85564f9533620955004') in 0.148159 seconds
+  Import took 0.168451 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002798 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.11 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.396 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3062 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 185.5 MB.
+System memory in use after: 185.4 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 4024.
+Total: 12.037400 ms (FindLiveObjects: 2.715200 ms CreateObjectMapping: 1.205400 ms MarkObjects: 7.091600 ms  DeleteObjects: 1.016600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.923046 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ef2395e78cf9c17b42ce565d3dbdeb5') in 0.408111 seconds
+  Import took 0.423805 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.174878 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2901e88287d8c48d2f1435e8260d43b9') in 0.157496 seconds
+  Import took 0.172761 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002983 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.289 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.08 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3062 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 185.7 MB.
+System memory in use after: 185.5 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 4063.
+Total: 9.513800 ms (FindLiveObjects: 1.940100 ms CreateObjectMapping: 0.917700 ms MarkObjects: 5.908500 ms  DeleteObjects: 0.744700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.646741 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd61234ebc3dea478ce0d34d5ff465328') in 0.323432 seconds
+  Import took 0.337223 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 45.953351 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5dcb6a2589dad051d6d2cb8ab477cd9') in 0.113659 seconds
+  Import took 0.132568 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 58.708958 seconds.
+  path: Assets/Prefabs/Players/Swat 2.prefab
+  artifactKey: Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Players/Swat 2.prefab using Guid(057177878d2e888409e58abc8426ffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9a2d56c6f88b2136e2243ec3d0100ce') in 0.118387 seconds
+  Import took 0.131198 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
