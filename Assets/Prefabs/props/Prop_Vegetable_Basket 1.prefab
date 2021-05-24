@@ -53,7 +53,6 @@ GameObject:
   - component: {fileID: -6400901856805703679}
   - component: {fileID: 3116323425951535499}
   - component: {fileID: 7091187757076153294}
-  - component: {fileID: 225156465292350689}
   m_Layer: 6
   m_Name: Prop_Vegetable_Basket 1
   m_TagString: Prop
@@ -73,7 +72,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 97448468600564269}
-  - {fileID: 964271974950513011}
+  - {fileID: 5383440546789616562}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -231.971, z: 0}
@@ -198,14 +197,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0c802f1ad9b5674bac35695c2e71290, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flyCamera: {fileID: 3749704190482341069}
   componentsToDisable:
   - {fileID: -6400901856805703679}
   - {fileID: 3116323425951535499}
   - {fileID: 97448468600564265}
   - {fileID: 97448468600564475}
-  - {fileID: 3749704190482341069}
-  - {fileID: 0}
+  - {fileID: 7337920924211889447}
+  - {fileID: 8761425103307840583}
 --- !u!114 &97448468600564461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,8 +232,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   secondPlayerPrefab: {fileID: 6573465576746638001, guid: dab56fad082eb3240bced16ccb6e5e98, type: 3}
-  Camera: {fileID: 97448468600564265}
-  flyCamera: {fileID: 3749704190482341069}
 --- !u!114 &2892934444834535025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,20 +287,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.63076866, y: 0.6553368, z: 0.6259898}
   m_Center: {x: 0.2987277, y: 0.1723316, z: 0.07220136}
---- !u!114 &225156465292350689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 97448468600564297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13c26b0c2f33ac44caf05d4a91be1ce5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isNetworkTimeSynced: 0
-  time: {fileID: 0}
 --- !u!1 &97448468600564304
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,7 +298,6 @@ GameObject:
   - component: {fileID: 97448468600564293}
   - component: {fileID: 97448468600564265}
   - component: {fileID: 97448468600564475}
-  - component: {fileID: 8968419682019960024}
   m_Layer: 6
   m_Name: Camera
   m_TagString: Untagged
@@ -389,39 +370,7 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 97448468600564304}
   m_Enabled: 1
---- !u!114 &8968419682019960024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 97448468600564304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
---- !u!1 &8965436691516198851
+--- !u!1 &3997174578940428940
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -429,37 +378,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 964271974950513011}
-  - component: {fileID: 3749704190482341069}
-  - component: {fileID: 3269246689203685347}
+  - component: {fileID: 5383440546789616562}
+  - component: {fileID: 7337920924211889447}
+  - component: {fileID: 4128275677008159163}
+  - component: {fileID: 8761425103307840583}
   m_Layer: 6
-  m_Name: FlyCam
+  m_Name: FlyCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &964271974950513011
+  m_IsActive: 0
+--- !u!4 &5383440546789616562
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8965436691516198851}
+  m_GameObject: {fileID: 3997174578940428940}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.032999903, y: 0.72599995, z: -0.8420001}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 97448468600564270}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!20 &3749704190482341069
+--- !u!20 &7337920924211889447
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8965436691516198851}
+  m_GameObject: {fileID: 3997174578940428940}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -484,7 +434,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 247
+    m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -496,20 +446,28 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &3269246689203685347
+--- !u!81 &4128275677008159163
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3997174578940428940}
+  m_Enabled: 1
+--- !u!114 &8761425103307840583
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8965436691516198851}
+  m_GameObject: {fileID: 3997174578940428940}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7179d146bc00e7d45ae217d1600f1033, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSensitivity: 3
-  speed: 5
+  speed: 2
   minimumX: -360
   maximumX: 360
   minimumY: -60

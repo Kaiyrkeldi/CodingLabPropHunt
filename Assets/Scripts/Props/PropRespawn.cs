@@ -7,7 +7,6 @@ using UnityEngine.EventSystems;
 
 public class PropRespawn : NetworkBehaviour
 {
-    PropDeath prop;
     private Player healthScript;
     private GameObject respawnButton;
     public GameObject spawnpoint;
@@ -27,18 +26,23 @@ public class PropRespawn : NetworkBehaviour
     void SetRespawnButton()
     {
             respawnButton = GameObject.Find("GM").GetComponent<GameManager_References>().RespawnButton;
-            respawnButton.GetComponent<Button>().onClick.AddListener(EnablePlayer);
+            respawnButton.GetComponent<Button>().onClick.AddListener(CommenceRespawn);
             respawnButton.SetActive(false);
     }
 
     void EnablePlayer()
     {
-        healthScript.isDead = false;
+        GetComponent<CharacterController>().enabled = true;
+        Renderer[] renderers = GetComponentsInChildren<Renderer>();
+        foreach (Renderer ren in renderers)
+            ren.enabled = true;
+        GetComponent<Rigidbody>().transform.position = spawnpoint.transform.position;
 
         if (isLocalPlayer)
         {
-            respawnButton.SetActive(false);
+            //respawnButton.SetActive(false);
         }
+        //RpcSpawnPlayer();
     }
 
     void CommenceRespawn()

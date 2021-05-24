@@ -8,10 +8,6 @@ public class PropDeath : NetworkBehaviour
 {
     private Player healthScript;
     public GameObject secondPlayerPrefab;
-    public Camera Camera;
-    public Camera flyCamera;
-    private GameObject respawnButton;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -20,9 +16,8 @@ public class PropDeath : NetworkBehaviour
     }
     void Update()
     {
-
+        
     }
-
     void OnDisable()
     {
         healthScript.EventDie -= DisablePlayer;
@@ -30,21 +25,15 @@ public class PropDeath : NetworkBehaviour
 
     void DisablePlayer()
     {
-        //        healthScript.isDead = true;
-        GetComponent<CharacterController>().enabled = false;
-        GetComponent<Rigidbody>().useGravity = false;
-        GetComponent<PropMotor>().enabled = false;
-        GetComponent<PropController>().enabled = false;
-        GetComponent<BoxCollider>().enabled = false;
-        gameObject.tag = "Player";
-        Renderer[] renderers = GetComponentsInChildren<Renderer>();
-        foreach (Renderer ren in renderers)
-            ren.enabled = false;
-        if (isLocalPlayer)
-        {
-            GameObject.Find("HUD").SetActive(false);
-            Camera.enabled = false;
-            flyCamera.enabled = true;
-        }
+//        healthScript.isDead = true;
+        RpcSpawnPlayer();
+    }
+    [ClientRpc]
+    void RpcSpawnPlayer()
+    {
+        var conn = GetComponent<NetworkIdentity>().connectionToClient;
+        var newPlayer = Instantiate<GameObject>(secondPlayerPrefab, new Vector3(0, 0.5f, 0), Quaternion.identity);
+        Destroy(GetComponent<NetworkIdentity>().gameObject);
+        NetworkServer.ReplacePlayerForConnection(conn, newPlayer, 0);
     }
 }

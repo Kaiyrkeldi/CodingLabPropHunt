@@ -15,7 +15,6 @@ public class PropMotor : MonoBehaviour
     private Vector3 jump;
     public float jumpForce = 2f;
     private bool isGrounded;
-    private bool isBehind = false;
 
     void Start()
     {
@@ -62,22 +61,6 @@ public class PropMotor : MonoBehaviour
         {
             rb.constraints = RigidbodyConstraints.FreezeRotation;
         }
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            Player player = GameManager.GetPlayer(this.gameObject.name);
-            player.TakeDamage(100f);
-        }
-
-        if (Input.GetKeyDown(KeyCode.T) && !isBehind)
-        {
-            isBehind = true;
-            SetLayerRecursively(GameObject.FindGameObjectWithTag("Player"), 8);
-        }
-        else if(Input.GetKeyDown(KeyCode.T) && isBehind)
-        {
-            SetLayerRecursively(GameObject.FindGameObjectWithTag("Player"), 7);
-            isBehind = false;
-        }
 
     }
     void PerformMove()
@@ -94,25 +77,6 @@ public class PropMotor : MonoBehaviour
         if (cam != null)
         {
             cam.transform.Rotate(camRotation);
-        }
-    }
-
-    void SetLayerRecursively(GameObject obj, int newLayer)
-    {
-        if (null == obj)
-        {
-            return;
-        }
-
-        obj.layer = newLayer;
-
-        foreach (Transform child in obj.transform)
-        {
-            if (null == child)
-            {
-                continue;
-            }
-            SetLayerRecursively(child.gameObject, newLayer);
         }
     }
 }

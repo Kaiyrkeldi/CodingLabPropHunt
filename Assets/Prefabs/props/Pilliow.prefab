@@ -1,98 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &141064386211212978
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4980559939119822925}
-  - component: {fileID: 5318991315176741789}
-  - component: {fileID: 3555542371565998533}
-  m_Layer: 6
-  m_Name: FlyCam
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4980559939119822925
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 141064386211212978}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.42, y: 0.778, z: -0.825}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2749545141678876701}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!20 &5318991315176741789
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 141064386211212978}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 247
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!114 &3555542371565998533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 141064386211212978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7179d146bc00e7d45ae217d1600f1033, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseSensitivity: 3
-  speed: 5
-  minimumX: -360
-  maximumX: 360
-  minimumY: -60
-  maximumY: 60
 --- !u!1 &2749545141678876771
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,7 +104,6 @@ GameObject:
   - component: {fileID: 962234467409673173}
   - component: {fileID: 3212213671893110062}
   - component: {fileID: 1154307004717916882}
-  - component: {fileID: 8474018115408499689}
   m_Layer: 6
   m_Name: Pilliow
   m_TagString: Prop
@@ -217,7 +123,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2749545141678876702}
-  - {fileID: 4980559939119822925}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -231.971, z: 0}
@@ -342,13 +247,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0c802f1ad9b5674bac35695c2e71290, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flyCamera: {fileID: 5318991315176741789}
   componentsToDisable:
   - {fileID: 3212213671893110062}
   - {fileID: 962234467409673173}
   - {fileID: 2749545141678876698}
   - {fileID: 2749545141678876872}
-  - {fileID: 5318991315176741789}
 --- !u!114 &2749545141678876894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,8 +280,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   secondPlayerPrefab: {fileID: 6573465576746638001, guid: dab56fad082eb3240bced16ccb6e5e98, type: 3}
-  Camera: {fileID: 2749545141678876698}
-  flyCamera: {fileID: 5318991315176741789}
 --- !u!114 &1105537966914581570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -434,20 +335,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.66563547, y: 0.13771658, z: 0.9013635}
   m_Center: {x: 0.4563269, y: 0.06805018, z: 0.13940541}
---- !u!114 &8474018115408499689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2749545141678876794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13c26b0c2f33ac44caf05d4a91be1ce5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isNetworkTimeSynced: 0
-  time: {fileID: 0}
 --- !u!1 &2749545141678876795
 GameObject:
   m_ObjectHideFlags: 0

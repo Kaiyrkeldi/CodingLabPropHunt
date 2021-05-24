@@ -4,7 +4,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - m_PlayerPrefab: {instanceID: 0}
+  - m_PlayerPrefab: {fileID: 6573465576746638001, guid: dab56fad082eb3240bced16ccb6e5e98, type: 3}
   - matchMaker: {instanceID: 0}
   - firstPlayerPrefab: {instanceID: 0}
   - secondPlayerPrefab: {instanceID: 0}

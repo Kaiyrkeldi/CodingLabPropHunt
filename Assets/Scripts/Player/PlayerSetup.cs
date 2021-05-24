@@ -12,7 +12,7 @@ public class PlayerSetup : NetworkBehaviour
     private float currTimer;
     private Camera sceneCamera;
     private GameObject blackScreen;
-    private GameObject ProximityCheck;
+    GameObject health;
 
     [SerializeField]
     Behaviour[] componentsToDisable;
@@ -35,19 +35,15 @@ public class PlayerSetup : NetworkBehaviour
             if (sceneCamera != null)
                 sceneCamera.gameObject.SetActive(false);
         }
+        crossHairImage = GameObject.Find("crossHairImage").GetComponent<RawImage>();
+        health = GameObject.Find("healthText");
         if (isLocalPlayer)
         {
-            GameObject.Find("GM").GetComponent<GameManager_References>().hud.SetActive(true);
-            GameObject.Find("GM").GetComponent<GameManager_References>().crossHairImage.SetActive(true);
-            GameObject.Find("GM").GetComponent<GameManager_References>().ProximityCheck.SetActive(true);
+            health.SetActive(true);
+            crossHairImage.enabled = true;
             blackScreen = GameObject.Find("GM").GetComponent<GameManager_References>().blackScreen;
-            blackScreen.SetActive(true);
-            GetComponent<PlayerMotor>().enabled = false;
-            GetComponent<PlayerController>().enabled = false;
-            GetComponent<PlayerShoot>().enabled = false;
-
+            //blackScreen.SetActive(true);
         }
-
     }
     void Update()
     {
@@ -57,12 +53,7 @@ public class PlayerSetup : NetworkBehaviour
             Cursor.visible = false;
         currTimer += 1 * Time.deltaTime;
 
-        if (currTimer >= 30) { 
-            blackScreen.SetActive(false);
-            GetComponent<PlayerMotor>().enabled = true;
-            GetComponent<PlayerController>().enabled = true;
-            GetComponent<PlayerShoot>().enabled = true;
-        }
+        if (currTimer >= 30) { blackScreen.SetActive(false); }
     }
 
     public override void OnStartClient()

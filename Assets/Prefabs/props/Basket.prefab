@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5886563004641056925}
   - component: {fileID: 5886563004641057009}
   - component: {fileID: 5886563004641056803}
-  - component: {fileID: 3961210206323113563}
   m_Layer: 6
   m_Name: Camera
   m_TagString: Untagged
@@ -64,7 +63,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 247
+    m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -84,38 +83,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5886563004641056904}
   m_Enabled: 1
---- !u!114 &3961210206323113563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5886563004641056904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
 --- !u!1 &5886563004641056912
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,12 +131,12 @@ GameObject:
   - component: {fileID: 5886563004641056831}
   - component: {fileID: 641032061335789549}
   - component: {fileID: 5886563004641056821}
+  - component: {fileID: 696028532467401386}
   - component: {fileID: 8705094743653811369}
   - component: {fileID: -377292715493520578}
   - component: {fileID: -2662456202836165179}
   - component: {fileID: 7466389266521215545}
   - component: {fileID: 213408582823431887}
-  - component: {fileID: 3957943784840720308}
   m_Layer: 6
   m_Name: Basket
   m_TagString: Prop
@@ -189,7 +156,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5886563004641057013}
-  - {fileID: 8413634965117199713}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -231.971, z: 0}
@@ -314,13 +280,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0c802f1ad9b5674bac35695c2e71290, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flyCamera: {fileID: 3164668237960831179}
   componentsToDisable:
   - {fileID: -2662456202836165179}
   - {fileID: -377292715493520578}
   - {fileID: 5886563004641057009}
   - {fileID: 5886563004641056803}
-  - {fileID: 3164668237960831179}
 --- !u!114 &5886563004641056821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -336,6 +300,19 @@ MonoBehaviour:
   maxHealth: 20
   currHealth: 0
   isDead: 0
+--- !u!114 &696028532467401386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5886563004641056913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 064e14d6c834e2e449e219610dc53a9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondPlayerPrefab: {fileID: 6573465576746638001, guid: dab56fad082eb3240bced16ccb6e5e98, type: 3}
 --- !u!114 &8705094743653811369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,114 +382,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isNetworkTimeSynced: 0
   time: {fileID: 0}
---- !u!114 &3957943784840720308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5886563004641056913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 064e14d6c834e2e449e219610dc53a9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  secondPlayerPrefab: {fileID: 6573465576746638001, guid: dab56fad082eb3240bced16ccb6e5e98, type: 3}
-  Camera: {fileID: 5886563004641057009}
-  flyCamera: {fileID: 3164668237960831179}
---- !u!1 &8986460084260225811
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8413634965117199713}
-  - component: {fileID: 3164668237960831179}
-  - component: {fileID: 4330467660018917314}
-  m_Layer: 6
-  m_Name: FlyCam
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8413634965117199713
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8986460084260225811}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.534, y: 0.481, z: -0.157}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 5886563004641057014}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!20 &3164668237960831179
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8986460084260225811}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 247
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!114 &4330467660018917314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8986460084260225811}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7179d146bc00e7d45ae217d1600f1033, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseSensitivity: 3
-  speed: 5
-  minimumX: -360
-  maximumX: 360
-  minimumY: -60
-  maximumY: 60
 --- !u!1001 &6782909147675655836
 PrefabInstance:
   m_ObjectHideFlags: 0

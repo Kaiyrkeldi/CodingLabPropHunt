@@ -7,7 +7,6 @@ public class DeathZone : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Player player = GameManager.GetPlayer(other.gameObject.name);
-        player.transform.position = new Vector3(0, 2, 0);
-        //player.GetComponent<RigidBody>.constraints = RigidbodyConstraints.FreezeAll;
+        player.GetComponent<Rigidbody>().transform.position = new Vector3(Random.Range(-4.5f, 4.5f), 0.5f, 0);
     }
 }

@@ -25,10 +25,7 @@ public class GameManager : MonoBehaviour
     {
         return players[playerID];
     }
-    public static int GetCounter()
-    {
-        return players.Count;
-    }
+
     public static Player GetRandomPlayer()
     {
         int num = Random.Range(1, count+1);

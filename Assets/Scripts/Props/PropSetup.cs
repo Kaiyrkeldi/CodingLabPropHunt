@@ -10,7 +10,6 @@ public class PropSetup : NetworkBehaviour
 {
     private string remoteLayer = "RemotePlayer";
     private Camera sceneCamera;
-    public Camera flyCamera;
     GameObject health;
 
     [SerializeField]
@@ -37,15 +36,13 @@ public class PropSetup : NetworkBehaviour
         {
             health.SetActive(true);
         }
-        flyCamera.enabled = false;
     }
     void Update()
     {
         if (Input.GetKey(KeyCode.LeftAlt))
             Cursor.visible = true;
         else
-            Cursor.visible = false;
-        
+            Cursor.visible = false; 
     }
 
     public override void OnStartClient()
