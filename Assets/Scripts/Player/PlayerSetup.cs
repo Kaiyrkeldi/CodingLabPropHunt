@@ -5,13 +5,14 @@ using UnityEngine.Networking;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Player))]
+[RequireComponent(typeof(NetworkPlayer))]
 public class PlayerSetup : NetworkBehaviour
 {
     private string remoteLayer = "RemotePlayer";
     private float currTimer;
     private Camera sceneCamera;
     private GameObject blackScreen;
-    GameObject health;
+    private GameObject ProximityCheck;
 
     [SerializeField]
     Behaviour[] componentsToDisable;
@@ -34,15 +35,19 @@ public class PlayerSetup : NetworkBehaviour
             if (sceneCamera != null)
                 sceneCamera.gameObject.SetActive(false);
         }
-        crossHairImage = GameObject.Find("crossHairImage").GetComponent<RawImage>();
-        health = GameObject.Find("healthText");
         if (isLocalPlayer)
         {
-            health.SetActive(true);
-            crossHairImage.enabled = true;
+            GameObject.Find("GM").GetComponent<GameManager_References>().hud.SetActive(true);
+            GameObject.Find("GM").GetComponent<GameManager_References>().crossHairImage.SetActive(true);
+            GameObject.Find("GM").GetComponent<GameManager_References>().ProximityCheck.SetActive(true);
             blackScreen = GameObject.Find("GM").GetComponent<GameManager_References>().blackScreen;
             blackScreen.SetActive(true);
+            GetComponent<PlayerMotor>().enabled = false;
+            GetComponent<PlayerController>().enabled = false;
+            GetComponent<PlayerShoot>().enabled = false;
+
         }
+
     }
     void Update()
     {
@@ -52,7 +57,12 @@ public class PlayerSetup : NetworkBehaviour
             Cursor.visible = false;
         currTimer += 1 * Time.deltaTime;
 
-        if (currTimer >= 30) { blackScreen.SetActive(false); }
+        if (currTimer >= 30) { 
+            blackScreen.SetActive(false);
+            GetComponent<PlayerMotor>().enabled = true;
+            GetComponent<PlayerController>().enabled = true;
+            GetComponent<PlayerShoot>().enabled = true;
+        }
     }
 
     public override void OnStartClient()

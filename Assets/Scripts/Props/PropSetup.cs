@@ -5,10 +5,12 @@ using UnityEngine.Networking;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Player))]
+[RequireComponent(typeof(NetworkPlayer))]
 public class PropSetup : NetworkBehaviour
 {
     private string remoteLayer = "RemotePlayer";
     private Camera sceneCamera;
+    public Camera flyCamera;
     GameObject health;
 
     [SerializeField]
@@ -35,6 +37,7 @@ public class PropSetup : NetworkBehaviour
         {
             health.SetActive(true);
         }
+        flyCamera.enabled = false;
     }
     void Update()
     {
@@ -42,6 +45,7 @@ public class PropSetup : NetworkBehaviour
             Cursor.visible = true;
         else
             Cursor.visible = false;
+        
     }
 
     public override void OnStartClient()

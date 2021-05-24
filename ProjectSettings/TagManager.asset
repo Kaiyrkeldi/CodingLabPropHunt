@@ -4,17 +4,19 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Prop
+  - Fire
   - basket
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - PlayerIcon
   - Water
   - UI
   - LocalPlayer
   - RemotePlayer
-  - 
+  - Hunter
   - 
   - 
   - 

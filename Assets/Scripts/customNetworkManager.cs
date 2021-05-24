@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
-using UnityEngine.UI;
 
 public class customNetworkManager : NetworkManager
 {
@@ -10,12 +9,12 @@ public class customNetworkManager : NetworkManager
 	private GameObject health;
 	private GameObject SpawnButtons;
 	private GameObject blackScreen;
+	private GameObject minimap;
+	private GameObject Audio;
+	GameObject playerPrefab;
 
-<<<<<<< HEAD
-	public GameObject firstPlayerPrefab, secondPlayerPrefab, propVegetableBasket,basket,mug;
-=======
-	public GameObject firstPlayerPrefab, secondPlayerPrefab, propVegetableBasket,basket,mug,cup,skin,box,chair,pillow;
->>>>>>> 399dc667145c7b86349a0c5f3429be9c6a8bf1cf
+	public GameObject firstPlayerPrefab, secondPlayerPrefab, propVegetableBasket,basket,mug, cup, skin, box, chair, pillow;
+
 
 	void Awake()
 	{
@@ -23,13 +22,26 @@ public class customNetworkManager : NetworkManager
 		SpawnButtons = GameObject.Find("SpawnButtons");
 		SpawnButtons.SetActive(false);
 		blackScreen = GameObject.Find("GM").GetComponent<GameManager_References>().blackScreen;
-	}
+		GameObject.Find("GM").GetComponent<GameManager_References>().ProximityCheck.SetActive(false);
+		GameObject.Find("GM").GetComponent<GameManager_References>().crossHairImage.SetActive(false);
+		GameObject.Find("GM").GetComponent<GameManager_References>().menu.SetActive(false);
+		GameObject.Find("GM").GetComponent<GameManager_References>().Lobby.SetActive(true);
+		Audio = GameObject.Find("Audio_Manager");
 
+	}
 	public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerId, NetworkReader extraMessagereader)
 	{
 		PlayerInfoMessage msg = extraMessagereader.ReadMessage<PlayerInfoMessage>();
 		Debug.Log(msg.playerClass);
-		GameObject playerPrefab = spawnPlayerFromClass(msg.playerClass);
+		if(msg.playerClass == PlayerClass.second) { 
+		 playerPrefab = spawnPlayerFromClass(msg.playerClass);
+		}
+        else
+        {
+			playerPrefab = spawnPlayerRandom();
+		}
+		GameObject.Find("GM").GetComponent<GameManager_References>().crossHairImage.SetActive(true);
+		GameObject.Find("GM").GetComponent<GameManager_References>().Lobby.SetActive(false);
 		NetworkServer.AddPlayerForConnection(conn, playerPrefab, playerControllerId);
 	}
 
@@ -38,6 +50,10 @@ public class customNetworkManager : NetworkManager
 		base.OnStartClient(client);
 		SpawnButtons.SetActive(true);
 		blackScreen.SetActive(false);
+		GameObject.Find("GM").GetComponent<GameManager_References>().crossHairImage.SetActive(false);
+		GameObject.Find("GM").GetComponent<GameManager_References>().menu.SetActive(false);
+		GameObject.Find("GM").GetComponent<GameManager_References>().Lobby.SetActive(false);
+		Audio.SetActive(false);
 	}
 
 	public override void OnStopClient()
@@ -46,56 +62,63 @@ public class customNetworkManager : NetworkManager
 		SpawnButtons.SetActive(false);
 		Cursor.visible = true;
 		blackScreen.SetActive(false);
+		GameManager.UnRegisterPlayer(transform.name);
+		GameObject.Find("GM").GetComponent<GameManager_References>().ProximityCheck.SetActive(false);
+		GameObject.Find("GM").GetComponent<GameManager_References>().crossHairImage.SetActive(false);
+		GameObject.Find("GM").GetComponent<GameManager_References>().menu.SetActive(false);
+		GameObject.Find("GM").GetComponent<GameManager_References>().Lobby.SetActive(true);
+		Audio.SetActive(true);
 	}
 
 	public GameObject spawnPlayerFromClass(PlayerClass playerClass)
 	{
 		GameObject playerPrefab = null;
-		switch (playerClass)
+		playerPrefab = secondPlayerPrefab;
+		return GameObject.Instantiate(playerPrefab, new Vector3(-4.3f, 1, 32.65f), Quaternion.identity);
+	}
+
+	public GameObject spawnPlayerRandom()
+	{
+		int num = Random.Range(1, 9);
+		GameObject playerPrefab = null;
+		switch (num)
 		{
-			case PlayerClass.first:
+			case 1:
 				playerPrefab = firstPlayerPrefab;
-				return GameObject.Instantiate(playerPrefab, new Vector3(0,0,-5), Quaternion.identity);
+				return GameObject.Instantiate(playerPrefab, new Vector3(0, 2, 0), Quaternion.identity);
 				break;
-			case PlayerClass.second:
-				playerPrefab = secondPlayerPrefab;
-				return GameObject.Instantiate(playerPrefab, new Vector3(92, 1, 107), Quaternion.identity);
-				break;
-			case PlayerClass.propVegetableBasket:
+			case 2:
 				playerPrefab = propVegetableBasket;
-				return GameObject.Instantiate(playerPrefab, new Vector3(0, 1, 50), Quaternion.identity);
+				return GameObject.Instantiate(playerPrefab, new Vector3(0, 2, 0), Quaternion.identity);
 				break;
-			case PlayerClass.basket:
+			case 3:
 				playerPrefab = basket;
-				return GameObject.Instantiate(playerPrefab, new Vector3(0, 1, 50), Quaternion.identity);
+				return GameObject.Instantiate(playerPrefab, new Vector3(0, 2, 0), Quaternion.identity);
 				break;
-			case PlayerClass.mug:
+			case 4:
 				playerPrefab = mug;
-				return GameObject.Instantiate(playerPrefab, new Vector3(0, 1, 50), Quaternion.identity);
+				return GameObject.Instantiate(playerPrefab, new Vector3(0, 2, 0), Quaternion.identity);
 				break;
-<<<<<<< HEAD
-=======
-			case PlayerClass.cup:
+			case 5:
 				playerPrefab = cup;
-				return GameObject.Instantiate(playerPrefab, new Vector3(0, 1, 50), Quaternion.identity);
+				return GameObject.Instantiate(playerPrefab, new Vector3(0, 2, 0), Quaternion.identity);
 				break;
-			case PlayerClass.skin:
+			case 6:
 				playerPrefab = skin;
-				return GameObject.Instantiate(playerPrefab, new Vector3(0, 1, 50), Quaternion.identity);
-				break;	
-			case PlayerClass.box:
+				return GameObject.Instantiate(playerPrefab, new Vector3(0, 2, 0), Quaternion.identity);
+				break;
+			case 7:
 				playerPrefab = box;
-				return GameObject.Instantiate(playerPrefab, new Vector3(0, 1, 50), Quaternion.identity);
+				return GameObject.Instantiate(playerPrefab, new Vector3(0, 2, 0), Quaternion.identity);
 				break;
-			case PlayerClass.chair:
+			case 8:
 				playerPrefab = chair;
-				return GameObject.Instantiate(playerPrefab, new Vector3(0, 1, 50), Quaternion.identity);
+				return GameObject.Instantiate(playerPrefab, new Vector3(0, 2, 0), Quaternion.identity);
 				break;
-			case PlayerClass.pillow:
+			case 9:
 				playerPrefab = pillow;
-				return GameObject.Instantiate(playerPrefab, new Vector3(0, 1, 50), Quaternion.identity);
+				return GameObject.Instantiate(playerPrefab, new Vector3(0, 2, 0), Quaternion.identity);
 				break;
->>>>>>> 399dc667145c7b86349a0c5f3429be9c6a8bf1cf
 		}
 		return GameObject.Instantiate(playerPrefab, new Vector3(0, 0, 0), Quaternion.identity);
 

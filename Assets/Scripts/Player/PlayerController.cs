@@ -9,7 +9,9 @@ public class PlayerController : MonoBehaviour
     private float speed = 5;
     [SerializeField]
     private float lookSpeed = 3f;
-    
+    [SerializeField]
+    private Camera cam;
+
 
     private PlayerMotor motor;
 
@@ -30,6 +32,16 @@ public class PlayerController : MonoBehaviour
             {
                 speed = 5;
             }
+        }
+        if (Input.GetMouseButtonDown(1))
+        {
+            cam.fieldOfView = 15f;
+            lookSpeed = 2f;
+        }
+        else if (Input.GetMouseButtonUp(1))
+        {
+            cam.fieldOfView = 60f;
+            lookSpeed = 6f;
         }
         float xMove = Input.GetAxisRaw("Horizontal");
         float zMove = Input.GetAxisRaw("Vertical");

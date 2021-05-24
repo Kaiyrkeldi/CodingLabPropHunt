@@ -6,7 +6,7 @@ public class PlayerShoot : NetworkBehaviour
 {
     public Weapon weapon;
     public float fireRate = 1;
-    public ParticleSystem muzzleFlash;
+    public GameObject muzzleFlash;
     public AudioSource _audioSource;
     private AudioSync audioSync;
     [SerializeField]
@@ -18,10 +18,11 @@ public class PlayerShoot : NetworkBehaviour
 
     [SerializeField]
     private LayerMask mask;
-    
+
     void Start()
     {
-        if (cam == null) { 
+        if (cam == null)
+        {
             Debug.LogError("PlayerShoot: No Camera");
             this.enabled = false;
         }
@@ -35,28 +36,29 @@ public class PlayerShoot : NetworkBehaviour
             Shoot();
         }
 
-        
+
     }
 
     [Client]
     void Shoot()
     {
-        audioSync.PlaySound(0); 
-        muzzleFlash.Play();
+        audioSync.PlaySound(0);
         RaycastHit _hit;
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out _hit, weapon.range, mask))
         {
             print("We shot at " + _hit.collider.name);
-            if (_hit.collider.tag == "Player")
+            GameObject _gfxIns = (GameObject)Instantiate(muzzleFlash, _hit.point, Quaternion.identity);
+            Destroy(_gfxIns, 0.3f);
+            if (_hit.collider.tag == "Prop")
             {
-              CmdPlayerShoot(_hit.collider.name, weapon.damage);
+                CmdPlayerShoot(_hit.collider.name, weapon.damage);
             }
             else
             {
-              CmdPlayerShoot(this.gameObject.name, (weapon.damage/5));
+                CmdPlayerShoot(this.gameObject.name, (weapon.damage / 5));
             }
         }
-        
+
 
     }
 
@@ -65,5 +67,12 @@ public class PlayerShoot : NetworkBehaviour
     {
         Player player = GameManager.GetPlayer(_id);
         player.TakeDamage(damage);
+        GameObject.Find(_id).GetComponent<PropController>().speed *= 0.8f;
+        Invoke("ReturnSpeed(_id)", 5);
+    }
+
+    void ReturnSpeed(string _id)
+    {
+        GameObject.Find(_id).GetComponent<PropController>().speed /= 0.8f;
     }
 }
