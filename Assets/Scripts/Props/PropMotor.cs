@@ -18,6 +18,8 @@ public class PropMotor : MonoBehaviour
     private bool isGrounded;
     private bool isBehind = false;
     public static bool wallHack = false;
+    public static bool speedx2 = false;
+    public static bool jumpx2 = false;
 
     void Start()
     {
@@ -30,9 +32,17 @@ public class PropMotor : MonoBehaviour
         jump = new Vector3(0.0f, 2.0f, 0.0f);
         flyCamera.enabled = false;
     }
-    void OnCollisionStay()
+
+    void OnCollisionEnter(Collision collision)
     {
-        isGrounded = true;
+        if (collision.contacts.Length > 0)
+        {
+            ContactPoint contact = collision.contacts[0];
+            if (Vector3.Dot(contact.normal, Vector3.up) > 0.5)
+            {
+                isGrounded = true;           //collision was from below
+            }
+        }
     }
     public void Move(Vector3 _vel)
     {
@@ -53,7 +63,14 @@ public class PropMotor : MonoBehaviour
     {
         PerformMove();
         PerformRotation();
-        
+        if (speedx2)
+        {
+            PropController.speed = 10f;   
+        }
+        if (jumpx2)
+        {
+            jumpForce = 4f;
+        }
     }
     void Update()
     {

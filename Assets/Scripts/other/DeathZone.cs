@@ -8,6 +8,7 @@ public class DeathZone : MonoBehaviour
     {
         Player player = GameManager.GetPlayer(other.gameObject.name);
         player.transform.position = new Vector3(0, 2, 0);
-        //player.GetComponent<RigidBody>.constraints = RigidbodyConstraints.FreezeAll;
+        player.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+        player.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
     }
 }

@@ -18,9 +18,19 @@ public class Dropdownhandler : MonoBehaviour
         if (value == 1) {
             PropMotor.wallHack = true;
             Debug.Log(value);
+            GameObject.Find("GM").GetComponent<GameManager_References>().Perks.SetActive(false);
         }
-        if (value == 2) Debug.Log(value);
-        if (value == 3) Debug.Log(value);
-        GameObject.Find("GM").GetComponent<GameManager_References>().Perks.SetActive(false);
+        if (value == 2) {
+            PropMotor.speedx2 = true;
+            Debug.Log(value);
+            GameObject.Find("GM").GetComponent<GameManager_References>().Perks.SetActive(false);
+        }
+        if (value == 3) 
+        {
+            PropMotor.jumpx2 = true;
+            Debug.Log(value);
+            GameObject.Find("GM").GetComponent<GameManager_References>().Perks.SetActive(false);
+        }
+        
     }
 }

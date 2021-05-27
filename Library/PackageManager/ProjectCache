@@ -1,6 +1,6 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: D:/Programs/Unity/Unity Editor/TEST/Packages/manifest.json
+    m_FilePath: D:/Study/3rd trimestr/Coding LAB/CodingLabPropHunt/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
@@ -8,7 +8,7 @@ m_ProjectFiles:
       ticks: 637574662528244389
     m_Hash: 3381281619
   m_LockFileStatus:
-    m_FilePath: D:/Programs/Unity/Unity Editor/TEST/Packages/packages-lock.json
+    m_FilePath: D:/Study/3rd trimestr/Coding LAB/CodingLabPropHunt/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
@@ -25,7 +25,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.3
       source: 1
-      resolvedPath: D:\Programs\Unity\Unity Editor\TEST\Library\PackageCache\com.unity.animation.rigging@1.0.3
+      resolvedPath: D:\Study\3rd trimestr\Coding LAB\CodingLabPropHunt\Library\PackageCache\com.unity.animation.rigging@1.0.3
       assetPath: Packages/com.unity.animation.rigging
       name: com.unity.animation.rigging
       displayName: Animation Rigging
@@ -117,7 +117,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.7
       source: 1
-      resolvedPath: D:\Programs\Unity\Unity Editor\TEST\Library\PackageCache\com.unity.ide.rider@2.0.7
+      resolvedPath: D:\Study\3rd trimestr\Coding LAB\CodingLabPropHunt\Library\PackageCache\com.unity.ide.rider@2.0.7
       assetPath: Packages/com.unity.ide.rider
       name: com.unity.ide.rider
       displayName: JetBrains Rider Editor
@@ -224,7 +224,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.8
       source: 1
-      resolvedPath: D:\Programs\Unity\Unity Editor\TEST\Library\PackageCache\com.unity.ide.visualstudio@2.0.8
+      resolvedPath: D:\Study\3rd trimestr\Coding LAB\CodingLabPropHunt\Library\PackageCache\com.unity.ide.visualstudio@2.0.8
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -307,7 +307,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.2.3
       source: 1
-      resolvedPath: D:\Programs\Unity\Unity Editor\TEST\Library\PackageCache\com.unity.ide.vscode@1.2.3
+      resolvedPath: D:\Study\3rd trimestr\Coding LAB\CodingLabPropHunt\Library\PackageCache\com.unity.ide.vscode@1.2.3
       assetPath: Packages/com.unity.ide.vscode
       name: com.unity.ide.vscode
       displayName: Visual Studio Code Editor
@@ -376,7 +376,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.8
       source: 1
-      resolvedPath: D:\Programs\Unity\Unity Editor\TEST\Library\PackageCache\com.unity.multiplayer-hlapi@1.0.8
+      resolvedPath: D:\Study\3rd trimestr\Coding LAB\CodingLabPropHunt\Library\PackageCache\com.unity.multiplayer-hlapi@1.0.8
       assetPath: Packages/com.unity.multiplayer-hlapi
       name: com.unity.multiplayer-hlapi
       displayName: Multiplayer HLAPI
@@ -448,7 +448,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 4.5.0
       source: 1
-      resolvedPath: D:\Programs\Unity\Unity Editor\TEST\Library\PackageCache\com.unity.probuilder@4.5.0
+      resolvedPath: D:\Study\3rd trimestr\Coding LAB\CodingLabPropHunt\Library\PackageCache\com.unity.probuilder@4.5.0
       assetPath: Packages/com.unity.probuilder
       name: com.unity.probuilder
       displayName: ProBuilder
@@ -586,7 +586,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 10.4.0
       source: 1
-      resolvedPath: D:\Programs\Unity\Unity Editor\TEST\Library\PackageCache\com.unity.render-pipelines.universal@10.4.0
+      resolvedPath: D:\Study\3rd trimestr\Coding LAB\CodingLabPropHunt\Library\PackageCache\com.unity.render-pipelines.universal@10.4.0
       assetPath: Packages/com.unity.render-pipelines.universal
       name: com.unity.render-pipelines.universal
       displayName: Universal RP
@@ -696,7 +696,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.1.24
       source: 1
-      resolvedPath: D:\Programs\Unity\Unity Editor\TEST\Library\PackageCache\com.unity.test-framework@1.1.24
+      resolvedPath: D:\Study\3rd trimestr\Coding LAB\CodingLabPropHunt\Library\PackageCache\com.unity.test-framework@1.1.24
       assetPath: Packages/com.unity.test-framework
       name: com.unity.test-framework
       displayName: Test Framework
@@ -739,9 +739,11 @@ m_PackageAssets:
         - 1.1.20
         - 1.1.22
         - 1.1.24
+        - 1.1.26
         compatible:
         - 1.1.24
-        verified: 1.1.24
+        - 1.1.26
+        verified: 1.1.26
       dependencies:
       - name: com.unity.ext.nunit
         version: 1.0.6
@@ -784,7 +786,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 3.0.4
       source: 1
-      resolvedPath: D:\Programs\Unity\Unity Editor\TEST\Library\PackageCache\com.unity.textmeshpro@3.0.4
+      resolvedPath: D:\Study\3rd trimestr\Coding LAB\CodingLabPropHunt\Library\PackageCache\com.unity.textmeshpro@3.0.4
       assetPath: Packages/com.unity.textmeshpro
       name: com.unity.textmeshpro
       displayName: TextMeshPro
@@ -943,7 +945,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.4.7
       source: 1
-      resolvedPath: D:\Programs\Unity\Unity Editor\TEST\Library\PackageCache\com.unity.timeline@1.4.7
+      resolvedPath: D:\Study\3rd trimestr\Coding LAB\CodingLabPropHunt\Library\PackageCache\com.unity.timeline@1.4.7
       assetPath: Packages/com.unity.timeline
       name: com.unity.timeline
       displayName: Timeline
@@ -2896,7 +2898,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.6
       source: 1
-      resolvedPath: D:\Programs\Unity\Unity Editor\TEST\Library\PackageCache\com.unity.ext.nunit@1.0.6
+      resolvedPath: D:\Study\3rd trimestr\Coding LAB\CodingLabPropHunt\Library\PackageCache\com.unity.ext.nunit@1.0.6
       assetPath: Packages/com.unity.ext.nunit
       name: com.unity.ext.nunit
       displayName: Custom NUnit
@@ -2957,7 +2959,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 10.4.0
       source: 1
-      resolvedPath: D:\Programs\Unity\Unity Editor\TEST\Library\PackageCache\com.unity.render-pipelines.core@10.4.0
+      resolvedPath: D:\Study\3rd trimestr\Coding LAB\CodingLabPropHunt\Library\PackageCache\com.unity.render-pipelines.core@10.4.0
       assetPath: Packages/com.unity.render-pipelines.core
       name: com.unity.render-pipelines.core
       displayName: Core RP Library
@@ -3105,7 +3107,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 10.4.0
       source: 1
-      resolvedPath: D:\Programs\Unity\Unity Editor\TEST\Library\PackageCache\com.unity.shadergraph@10.4.0
+      resolvedPath: D:\Study\3rd trimestr\Coding LAB\CodingLabPropHunt\Library\PackageCache\com.unity.shadergraph@10.4.0
       assetPath: Packages/com.unity.shadergraph
       name: com.unity.shadergraph
       displayName: Shader Graph
@@ -3256,7 +3258,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.3
       source: 1
-      resolvedPath: D:\Programs\Unity\Unity Editor\TEST\Library\PackageCache\com.unity.settings-manager@1.0.3
+      resolvedPath: D:\Study\3rd trimestr\Coding LAB\CodingLabPropHunt\Library\PackageCache\com.unity.settings-manager@1.0.3
       assetPath: Packages/com.unity.settings-manager
       name: com.unity.settings-manager
       displayName: Settings Manager
@@ -3314,7 +3316,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 0.1.6-preview
       source: 1
-      resolvedPath: D:\Programs\Unity\Unity Editor\TEST\Library\PackageCache\nuget.mono-cecil@0.1.6-preview
+      resolvedPath: D:\Study\3rd trimestr\Coding LAB\CodingLabPropHunt\Library\PackageCache\nuget.mono-cecil@0.1.6-preview
       assetPath: Packages/nuget.mono-cecil
       name: nuget.mono-cecil
       displayName: Mono Cecil
@@ -3364,7 +3366,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.3.4
       source: 1
-      resolvedPath: D:\Programs\Unity\Unity Editor\TEST\Library\PackageCache\com.unity.burst@1.3.4
+      resolvedPath: D:\Study\3rd trimestr\Coding LAB\CodingLabPropHunt\Library\PackageCache\com.unity.burst@1.3.4
       assetPath: Packages/com.unity.burst
       name: com.unity.burst
       displayName: Burst
@@ -3573,7 +3575,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 4.3.1
       source: 1
-      resolvedPath: D:\Programs\Unity\Unity Editor\TEST\Library\PackageCache\com.unity.searcher@4.3.1
+      resolvedPath: D:\Study\3rd trimestr\Coding LAB\CodingLabPropHunt\Library\PackageCache\com.unity.searcher@4.3.1
       assetPath: Packages/com.unity.searcher
       name: com.unity.searcher
       displayName: Searcher
@@ -3649,7 +3651,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.2.1
       source: 1
-      resolvedPath: D:\Programs\Unity\Unity Editor\TEST\Library\PackageCache\com.unity.mathematics@1.2.1
+      resolvedPath: D:\Study\3rd trimestr\Coding LAB\CodingLabPropHunt\Library\PackageCache\com.unity.mathematics@1.2.1
       assetPath: Packages/com.unity.mathematics
       name: com.unity.mathematics
       displayName: Mathematics
@@ -3721,5 +3723,5 @@ m_PackageAssets:
         path: 
   m_LocalPackages:
     m_LocalFileStatus: []
-m_ProjectPath: D:/Programs/Unity/Unity Editor/TEST/Packages
+m_ProjectPath: D:/Study/3rd trimestr/Coding LAB/CodingLabPropHunt/Packages
 m_EditorVersion: 2020.3.2f1 (8fd9074bf66c)
