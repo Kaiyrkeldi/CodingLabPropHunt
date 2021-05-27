@@ -67,12 +67,6 @@ public class PlayerShoot : NetworkBehaviour
     {
         Player player = GameManager.GetPlayer(_id);
         player.TakeDamage(damage);
-        GameObject.Find(_id).GetComponent<PropController>().speed *= 0.8f;
-        Invoke("ReturnSpeed(_id)", 5);
     }
 
-    void ReturnSpeed(string _id)
-    {
-        GameObject.Find(_id).GetComponent<PropController>().speed /= 0.8f;
-    }
 }

@@ -46,6 +46,10 @@ namespace UnityEngine.Networking
 		public void StartupHost()
 		{
 			manager.StartHost();
+			GameObject.Find("GM").GetComponent<GameManager_References>().ProximityCheck.SetActive(false);
+			GameObject.Find("GM").GetComponent<GameManager_References>().crossHairImage.SetActive(false);
+			GameObject.Find("GM").GetComponent<GameManager_References>().menu.SetActive(false);
+			GameObject.Find("GM").GetComponent<GameManager_References>().Lobby.SetActive(false);
 		}
 
 		public void JoinGame()
@@ -63,6 +67,7 @@ namespace UnityEngine.Networking
 		public void DedicatedServer()
         {
 			manager.StartServer();
+
         }
 		public void Disconnect()
 		{

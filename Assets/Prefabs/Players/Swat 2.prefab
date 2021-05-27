@@ -1961,7 +1961,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1121f4aaf862aa4dafe537c083dfe4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  componentsToDisable: []
+  componentsToDisable:
+  - {fileID: 452628972490999780}
+  - {fileID: 6900142981441214848}
+  - {fileID: 4227633075666448669}
+  - {fileID: 3253493168140777032}
+  - {fileID: 6096733440467278642}
+  - {fileID: 2549082489342255326}
+  - {fileID: 2206875421423054065}
+  - {fileID: 2927853117212985606}
+  - {fileID: 6096733440467278641}
 --- !u!114 &4227633075666448669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2583,6 +2592,38 @@ Transform:
   m_Father: {fileID: 5344603198664288420}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5939776969187113385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6096733440467278647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &6138980565494384604
 GameObject:
   m_ObjectHideFlags: 0
@@ -3408,6 +3449,21 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 2962215613676157369, guid: e00510edc02860140b555ddfddc6ea24, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e00510edc02860140b555ddfddc6ea24, type: 3}
+--- !u!1 &6096733440467278647 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2962215613676157374, guid: e00510edc02860140b555ddfddc6ea24, type: 3}
+  m_PrefabInstance: {fileID: 9043251849502941833}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &6096733440467278642 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2962215613676157371, guid: e00510edc02860140b555ddfddc6ea24, type: 3}
+  m_PrefabInstance: {fileID: 9043251849502941833}
+  m_PrefabAsset: {fileID: 0}
+--- !u!81 &6096733440467278641 stripped
+AudioListener:
+  m_CorrespondingSourceObject: {fileID: 2962215613676157368, guid: e00510edc02860140b555ddfddc6ea24, type: 3}
+  m_PrefabInstance: {fileID: 9043251849502941833}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6096733440467278643 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2962215613676157370, guid: e00510edc02860140b555ddfddc6ea24, type: 3}

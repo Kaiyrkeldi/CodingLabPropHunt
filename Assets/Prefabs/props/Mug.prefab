@@ -298,6 +298,7 @@ MonoBehaviour:
   - {fileID: 5856901420270824938}
   - {fileID: 5856901420270824760}
   - {fileID: 6291612907979367229}
+  - {fileID: 675094990047590321}
 --- !u!114 &5856901420270824750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,7 +314,6 @@ MonoBehaviour:
   maxHealth: 15
   currHealth: 0
   isDead: 0
-  hunterPrefab: {fileID: 6573465576746638001, guid: dab56fad082eb3240bced16ccb6e5e98, type: 3}
 --- !u!114 &675094990047590321
 MonoBehaviour:
   m_ObjectHideFlags: 0

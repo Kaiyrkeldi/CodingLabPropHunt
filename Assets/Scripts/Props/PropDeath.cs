@@ -31,10 +31,7 @@ public class PropDeath : NetworkBehaviour
     void DisablePlayer()
     {
         GameObject[] players = GameObject.FindGameObjectsWithTag("Prop");
-        foreach (GameObject player in players)
-        {
-            SetLayerRecursively(player, 8);
-        }
+        
         //        healthScript.isDead = true;
         GetComponent<CharacterController>().enabled = false;
         GetComponent<Rigidbody>().transform.position = Vector3.zero;
@@ -51,6 +48,10 @@ public class PropDeath : NetworkBehaviour
             GameObject.Find("GM").GetComponent<GameManager_References>().hud.SetActive(false);
             Camera.enabled = false;
             flyCamera.enabled = true;
+            foreach (GameObject player in players)
+            {
+                SetLayerRecursively(player, 8);
+            }
         }
     }
 

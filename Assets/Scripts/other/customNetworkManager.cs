@@ -9,9 +9,11 @@ public class customNetworkManager : NetworkManager
 	private GameObject crossHair;
 	private GameObject health;
 	private GameObject SpawnButtons;
-	private GameObject blackScreen;
+	public GameObject blackScreen;
 	private GameObject minimap;
 	private GameObject Audio;
+	public GameObject Lobby;
+	public GameObject Perks;
 	GameObject playerPrefab;
 
 	public GameObject firstPlayerPrefab, secondPlayerPrefab, propVegetableBasket,basket,mug, cup, skin, box, chair, pillow;
@@ -24,20 +26,22 @@ public class customNetworkManager : NetworkManager
 		DontDestroyOnLoad(this.gameObject);
 		SpawnButtons = GameObject.Find("SpawnButtons");
 		SpawnButtons.SetActive(false);
-		blackScreen = GameObject.Find("GM").GetComponent<GameManager_References>().blackScreen;
-		GameObject.Find("GM").GetComponent<GameManager_References>().ProximityCheck.SetActive(false);
-		GameObject.Find("GM").GetComponent<GameManager_References>().crossHairImage.SetActive(false);
-		GameObject.Find("GM").GetComponent<GameManager_References>().menu.SetActive(false);
-		GameObject.Find("GM").GetComponent<GameManager_References>().Lobby.SetActive(true);
+		Perks.SetActive(false);
 		Audio = GameObject.Find("Audio_Manager");
+	}
+
+	void Start()
+    {
+
 	}
 	public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerId, NetworkReader extraMessagereader)
 	{
 		PlayerInfoMessage msg = extraMessagereader.ReadMessage<PlayerInfoMessage>();
 		Debug.Log(msg.playerClass);
 		if(msg.playerClass == PlayerClass.second) { 
-			if(GameObject.FindGameObjectWithTag("Player") != null)
+			if(GameObject.FindGameObjectWithTag("Player") != null) { 
 				playerPrefab = spawnPlayerRandom();
+			}
 			else
 				playerPrefab = spawnPlayerFromClass(msg.playerClass);
 		}
@@ -45,9 +49,9 @@ public class customNetworkManager : NetworkManager
         {
 			playerPrefab = spawnPlayerRandom();
 		}
-		GameObject.Find("GM").GetComponent<GameManager_References>().Perks.SetActive(true);
 		GameObject.Find("GM").GetComponent<GameManager_References>().crossHairImage.SetActive(true);
 		GameObject.Find("GM").GetComponent<GameManager_References>().Lobby.SetActive(false);
+		Perks.SetActive(false);
 		NetworkServer.AddPlayerForConnection(conn, playerPrefab, playerControllerId);
 	}
 
@@ -55,11 +59,10 @@ public class customNetworkManager : NetworkManager
 	{
 		base.OnStartClient(client);
 		SpawnButtons.SetActive(true);
-		blackScreen.SetActive(false);
-		GameObject.Find("GM").GetComponent<GameManager_References>().crossHairImage.SetActive(false);
-		GameObject.Find("GM").GetComponent<GameManager_References>().menu.SetActive(false);
-		GameObject.Find("GM").GetComponent<GameManager_References>().Lobby.SetActive(false);
+		Lobby.SetActive(false);
 		Audio.SetActive(false);
+		Perks.SetActive(false);
+		blackScreen.SetActive(false);
 	}
 
 	public override void OnStopClient()
@@ -67,12 +70,9 @@ public class customNetworkManager : NetworkManager
 		base.OnStopClient();
 		SpawnButtons.SetActive(false);
 		Cursor.visible = true;
-		blackScreen.SetActive(false);
 		GameManager.UnRegisterPlayer(transform.name);
-		GameObject.Find("GM").GetComponent<GameManager_References>().ProximityCheck.SetActive(false);
-		GameObject.Find("GM").GetComponent<GameManager_References>().crossHairImage.SetActive(false);
-		GameObject.Find("GM").GetComponent<GameManager_References>().menu.SetActive(false);
-		GameObject.Find("GM").GetComponent<GameManager_References>().Lobby.SetActive(true);
+		Lobby.SetActive(true);
+		blackScreen.SetActive(false);
 		Audio.SetActive(true);
 	}
 

@@ -27,6 +27,7 @@ public class PropSetup : NetworkBehaviour
         }
         else
         {
+            GameObject.Find("GM").GetComponent<GameManager_References>().Perks.SetActive(true);
             sceneCamera = Camera.main;
             if (sceneCamera != null)
                 sceneCamera.gameObject.SetActive(false);

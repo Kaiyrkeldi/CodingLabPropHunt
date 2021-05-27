@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
+using TMPro;
 
 [RequireComponent(typeof(Player))]
 [RequireComponent(typeof(NetworkPlayer))]
@@ -13,6 +14,7 @@ public class PlayerSetup : NetworkBehaviour
     private Camera sceneCamera;
     private GameObject blackScreen;
     private GameObject ProximityCheck;
+    private TMP_Text blackText;
 
     [SerializeField]
     Behaviour[] componentsToDisable;
@@ -42,6 +44,7 @@ public class PlayerSetup : NetworkBehaviour
             GameObject.Find("GM").GetComponent<GameManager_References>().ProximityCheck.SetActive(true);
             blackScreen = GameObject.Find("GM").GetComponent<GameManager_References>().blackScreen;
             blackScreen.SetActive(true);
+            blackText = GameObject.Find("blackText").GetComponent<TMP_Text>();
             GetComponent<PlayerMotor>().enabled = false;
             GetComponent<PlayerController>().enabled = false;
             GetComponent<PlayerShoot>().enabled = false;
@@ -55,16 +58,24 @@ public class PlayerSetup : NetworkBehaviour
             Cursor.visible = true;
         else
             Cursor.visible = false;
+    }
+
+    void LateUpdate()
+    {
         currTimer += 1 * Time.deltaTime;
 
-        if (currTimer >= 30) { 
+        if (currTimer >= 30)
+        {
             blackScreen.SetActive(false);
             GetComponent<PlayerMotor>().enabled = true;
             GetComponent<PlayerController>().enabled = true;
             GetComponent<PlayerShoot>().enabled = true;
         }
+        else
+        {
+            blackText.text = "Wait " + ((int)(30 - currTimer)).ToString() + " seconds";
+        }
     }
-
     public override void OnStartClient()
     {
         base.OnStartClient();
