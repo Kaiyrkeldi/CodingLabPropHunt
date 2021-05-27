@@ -31,8 +31,6 @@ public class PropDeath : NetworkBehaviour
     void DisablePlayer()
     {
         GameObject[] players = GameObject.FindGameObjectsWithTag("Prop");
-        
-        //        healthScript.isDead = true;
         GetComponent<CharacterController>().enabled = false;
         GetComponent<Rigidbody>().transform.position = Vector3.zero;
         GetComponent<Rigidbody>().useGravity = false;

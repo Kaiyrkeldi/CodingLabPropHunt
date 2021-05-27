@@ -14,6 +14,8 @@ public class customNetworkManager : NetworkManager
 	private GameObject Audio;
 	public GameObject Lobby;
 	public GameObject Perks;
+	public GameObject Heal;
+	public GameObject WH;
 	GameObject playerPrefab;
 
 	public GameObject firstPlayerPrefab, secondPlayerPrefab, propVegetableBasket,basket,mug, cup, skin, box, chair, pillow;
@@ -30,10 +32,6 @@ public class customNetworkManager : NetworkManager
 		Audio = GameObject.Find("Audio_Manager");
 	}
 
-	void Start()
-    {
-
-	}
 	public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerId, NetworkReader extraMessagereader)
 	{
 		PlayerInfoMessage msg = extraMessagereader.ReadMessage<PlayerInfoMessage>();
@@ -73,6 +71,12 @@ public class customNetworkManager : NetworkManager
 		GameManager.UnRegisterPlayer(transform.name);
 		Lobby.SetActive(true);
 		blackScreen.SetActive(false);
+		Heal.SetActive(false);
+		PropMotor.healing = false;
+		WH.SetActive(false);
+		PropMotor.wallHack = false;
+		PropMotor.speedx2 = false;
+		PropMotor.jumpx2 = false;
 		Audio.SetActive(true);
 	}
 

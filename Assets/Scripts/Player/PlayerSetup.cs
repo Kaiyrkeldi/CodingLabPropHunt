@@ -6,7 +6,6 @@ using UnityEngine.UI;
 using TMPro;
 
 [RequireComponent(typeof(Player))]
-[RequireComponent(typeof(NetworkPlayer))]
 public class PlayerSetup : NetworkBehaviour
 {
     private string remoteLayer = "RemotePlayer";
@@ -15,6 +14,7 @@ public class PlayerSetup : NetworkBehaviour
     private GameObject blackScreen;
     private GameObject ProximityCheck;
     private TMP_Text blackText;
+    private bool bs = true;
 
     [SerializeField]
     Behaviour[] componentsToDisable;
@@ -64,15 +64,17 @@ public class PlayerSetup : NetworkBehaviour
     {
         currTimer += 1 * Time.deltaTime;
 
-        if (currTimer >= 30)
+        if (!bs)
         {
             blackScreen.SetActive(false);
             GetComponent<PlayerMotor>().enabled = true;
             GetComponent<PlayerController>().enabled = true;
             GetComponent<PlayerShoot>().enabled = true;
+            bs = false;
         }
-        else
+        else if(bs)
         {
+            if (currTimer >= 30) bs = false;
             blackText.text = "Wait " + ((int)(30 - currTimer)).ToString() + " seconds";
         }
     }

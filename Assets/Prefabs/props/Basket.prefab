@@ -168,7 +168,6 @@ GameObject:
   - component: {fileID: -377292715493520578}
   - component: {fileID: -2662456202836165179}
   - component: {fileID: 7466389266521215545}
-  - component: {fileID: 213408582823431887}
   - component: {fileID: 3957943784840720308}
   m_Layer: 6
   m_Name: Basket
@@ -377,7 +376,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41eadccdc59ef054b81ed200503a643a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
   lookSpeed: 3
 --- !u!65 &7466389266521215545
 BoxCollider:
@@ -392,20 +390,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.1878351, y: 0.18236324, z: 0.17676502}
   m_Center: {x: 0.30025452, y: 0.18773468, z: 0.023387222}
---- !u!114 &213408582823431887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5886563004641056913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13c26b0c2f33ac44caf05d4a91be1ce5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isNetworkTimeSynced: 0
-  time: {fileID: 0}
 --- !u!114 &3957943784840720308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -448,7 +432,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8986460084260225811}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 10, z: 0}
+  m_LocalPosition: {x: -0.017, y: 0.495, z: -0.587}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5886563004641057014}
@@ -600,6 +584,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4959803863050158, guid: 18b1e45bbfd559d4fa71b282638449c9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 205543095683100830, guid: 18b1e45bbfd559d4fa71b282638449c9, type: 3}
+      propertyPath: m_FadeMode
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

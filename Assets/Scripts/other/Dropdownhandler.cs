@@ -31,6 +31,13 @@ public class Dropdownhandler : MonoBehaviour
             Debug.Log(value);
             GameObject.Find("GM").GetComponent<GameManager_References>().Perks.SetActive(false);
         }
-        
+
+        if (value == 4)
+        {
+            PropMotor.healing = true;
+            Debug.Log(value);
+            GameObject.Find("GM").GetComponent<GameManager_References>().Perks.SetActive(false);
+        }
+
     }
 }

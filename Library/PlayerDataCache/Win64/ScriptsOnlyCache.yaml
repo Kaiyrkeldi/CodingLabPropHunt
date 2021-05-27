@@ -2,7 +2,10 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp-firstpass.dll:
     - PolyPerfect.AnimalAudioManager
+    - PolyPerfect.AnimalPlaySound
     - PolyPerfect.AnimalWanderManager
+    - PolyPerfect.Animal_AIStats
+    - PolyPerfect.Animal_WanderScript
     Assembly-CSharp.dll:
     - AnimalDeath
     - AudioSync
@@ -16,7 +19,6 @@ ScriptsOnlyBuild:
     - HorseMovement
     - MouseLook
     - Nearest
-    - NetworkPlayer
     - Player
     - PlayerController
     - PlayerDeath
@@ -102,11 +104,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
-    com.unity.multiplayer-hlapi.Editor.dll:
-    - UnityEditor.NetworkBehaviourInspector
-    - UnityEditor.NetworkIdentityEditor
-    - UnityEditor.NetworkTransformChildEditor
-    - UnityEditor.NetworkTransformEditor
     com.unity.multiplayer-hlapi.Runtime.dll:
     - UnityEngine.Networking.NetworkAnimator
     - UnityEngine.Networking.NetworkCallbacks
@@ -115,7 +112,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Networking.NetworkTransform
     - UnityEngine.Networking.NetworkTransformChild
   sceneClasses:
-    Assets/Scenes/SampleScene (5).unity:
+    Assets/Scenes/Patch16.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -186,6 +183,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 1784}
     - Class: 114
       Script: {instanceID: 1840}
+    - Class: 114
+      Script: {instanceID: 1938}
     - Class: 114
       Script: {instanceID: 2230}
     - Class: 114
@@ -321,6 +320,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6770}
     - Class: 114
+      Script: {instanceID: 7048}
+    - Class: 114
       Script: {instanceID: 7064}
     - Class: 114
       Script: {instanceID: 7102}
@@ -330,6 +331,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7296}
     - Class: 114
       Script: {instanceID: 7350}
+    - Class: 114
+      Script: {instanceID: 7536}
     - Class: 114
       Script: {instanceID: 7596}
     - Class: 114
@@ -352,6 +355,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
+    - Class: 195
+      Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
     - Class: 198
@@ -370,7 +375,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    - Class: 850595691
+    - Class: 238
       Script: {instanceID: 0}
     - Class: 1953259897
       Script: {instanceID: 0}
@@ -425,7 +430,7 @@ ScriptsOnlyBuild:
     className: StandaloneInputModule
   - hash:
       serializedVersion: 2
-      Hash: d1fdee9cc360d2f387e9dc7a7f7827ab
+      Hash: a4e7b8ff3532f9d64d165b643b4b80a5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PropController
@@ -1115,12 +1120,6 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 4ffd3cd81acc53548fed96115a94c3c8
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: NetworkPlayer
-  - hash:
-      serializedVersion: 2
       Hash: 67a99c72bf51722a004979b57db87178
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
@@ -1151,7 +1150,7 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
-      Hash: 24e8b63e34989f76b05029791df34d87
+      Hash: 177084bebbc951b6088a2e985c56a0a0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager_References
@@ -1811,7 +1810,7 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
-      Hash: 30cc418a3f9455d915e81cce816d3746
+      Hash: 6b66dc6d12ce6a9f413a43ef230eefe1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: customNetworkManager
@@ -2279,5 +2278,5 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   platform: 19
   scenePathNames:
-  - Assets/Scenes/SampleScene (5).unity
+  - Assets/Scenes/Patch16.unity
   playerPath: D:/Study/3rd trimestr/Coding LAB/PropHunt/PropHunt.exe

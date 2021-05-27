@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PropMotor : MonoBehaviour
@@ -20,9 +22,17 @@ public class PropMotor : MonoBehaviour
     public static bool wallHack = false;
     public static bool speedx2 = false;
     public static bool jumpx2 = false;
+    public static bool healing = false;
+    private bool isheal = false;
+    private Player healthScript;
+    private float perktimer = 20f;
+    private float currTimer = 0f;
+    private Text perkText;
 
     void Start()
     {
+        healthScript = GameManager.GetPlayer(this.gameObject.name);
+        perkText = GameObject.Find("GM").GetComponent<GameManager_References>().Heal.GetComponent<Text>();
         GameObject[] players = GameObject.FindGameObjectsWithTag("Prop");
         foreach (GameObject player in players)
         {
@@ -67,13 +77,25 @@ public class PropMotor : MonoBehaviour
         {
             PropController.speed = 10f;   
         }
+        else PropController.speed = 5f;
         if (jumpx2)
         {
             jumpForce = 4f;
         }
+
     }
     void Update()
     {
+        if (wallHack) { GameObject.Find("GM").GetComponent<GameManager_References>().WH.SetActive(true);
+            GameObject.Find("GM").GetComponent<GameManager_References>().Heal.SetActive(false);
+            perkText = GameObject.Find("GM").GetComponent<GameManager_References>().WH.GetComponent<Text>();
+        }
+        if (healing)
+        {
+            perkText = GameObject.Find("GM").GetComponent<GameManager_References>().Heal.GetComponent<Text>();
+            GameObject.Find("GM").GetComponent<GameManager_References>().WH.SetActive(false);
+            GameObject.Find("GM").GetComponent<GameManager_References>().Heal.SetActive(true);
+        }
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.AddForce(jump * jumpForce, ForceMode.Impulse);
@@ -90,14 +112,33 @@ public class PropMotor : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.K))
         {
             Player player = GameManager.GetPlayer(this.gameObject.name);
-            player.TakeDamage(100f);
+            player.TakeDamage(5f);
         }
 
         if (Input.GetKeyDown(KeyCode.T) && !isBehind && wallHack)
         {
             isBehind = true;
             SetLayerRecursively(GameObject.FindGameObjectWithTag("Player"), 8);
-            Invoke("WallHackOff", 2.0f);
+            Invoke("WallHackOff", 5.0f);
+        }
+
+        if (isheal == false && Input.GetKeyDown(KeyCode.T) && healing)
+        {
+            isheal = true;
+            currTimer = 0f;
+            healthScript.ResetHealth();
+        }
+
+        if ((isheal || isBehind) && currTimer <= perktimer)
+        {
+            currTimer += 1 * Time.deltaTime;
+            perkText.text = Math.Round((perktimer - currTimer), 2).ToString();
+        }
+        else
+        {
+            perkText.text = "Press T";
+            isheal = false;
+            isBehind = false;
         }
 
     }
@@ -136,15 +177,8 @@ public class PropMotor : MonoBehaviour
             SetLayerRecursively(child.gameObject, newLayer);
         }
     }
-
     void WallHackOff()
     {
         SetLayerRecursively(GameObject.FindGameObjectWithTag("Player"), 7);
-        //isBehind = false;
-        Invoke("SetBH", 10.0f);
-    }
-    void SetBH()
-    {
-        isBehind = false;
     }
 }

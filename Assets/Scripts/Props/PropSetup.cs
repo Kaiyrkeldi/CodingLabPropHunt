@@ -5,7 +5,6 @@ using UnityEngine.Networking;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Player))]
-[RequireComponent(typeof(NetworkPlayer))]
 public class PropSetup : NetworkBehaviour
 {
     private string remoteLayer = "RemotePlayer";

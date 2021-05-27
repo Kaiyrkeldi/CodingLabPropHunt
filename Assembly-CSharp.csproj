@@ -64,7 +64,6 @@
     <Compile Include="Assets\Scripts\other\DeathZone.cs" />
     <Compile Include="Assets\Scripts\other\wheel.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMotor.cs" />
-    <Compile Include="Assets\Scripts\other\NetworkPlayer.cs" />
     <Compile Include="Assets\Scripts\other\GameManager_References.cs" />
     <Compile Include="Assets\Scripts\Props\PropDeath.cs" />
     <Compile Include="Assets\Scripts\other\AudioSync.cs" />

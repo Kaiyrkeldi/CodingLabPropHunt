@@ -53,7 +53,6 @@ GameObject:
   - component: {fileID: 9156919815500805476}
   - component: {fileID: 6835745669759206303}
   - component: {fileID: 7083473034858392675}
-  - component: {fileID: 5116096161317861623}
   m_Layer: 6
   m_Name: Skin
   m_TagString: Prop
@@ -204,7 +203,7 @@ MonoBehaviour:
   - {fileID: 6080204288143238827}
   - {fileID: 6080204288143238777}
   - {fileID: 2642782930930121093}
-  - {fileID: 898668286240242928}
+  - {fileID: 0}
 --- !u!114 &6080204288143238767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,7 +275,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41eadccdc59ef054b81ed200503a643a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
   lookSpeed: 3
 --- !u!65 &7083473034858392675
 BoxCollider:
@@ -291,20 +289,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5502698, y: 0.14691114, z: 1.0431378}
   m_Center: {x: 0.47278488, y: -0.027985305, z: 0.20531921}
---- !u!114 &5116096161317861623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6080204288143238859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13c26b0c2f33ac44caf05d4a91be1ce5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isNetworkTimeSynced: 0
-  time: {fileID: 0}
 --- !u!1 &6080204288143238866
 GameObject:
   m_ObjectHideFlags: 0
@@ -448,7 +432,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8097299811509766125}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 10, z: 0}
+  m_LocalPosition: {x: 0.53, y: 0.32, z: -1.21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6080204288143238828}
