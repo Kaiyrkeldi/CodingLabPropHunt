@@ -13,7 +13,7 @@ public class customNetworkManager : NetworkManager
 	private GameObject Audio;
 	GameObject playerPrefab;
 
-	public GameObject firstPlayerPrefab, secondPlayerPrefab, propVegetableBasket,basket,mug, cup, skin, box, chair, pillow;
+	public GameObject firstPlayerPrefab, secondPlayerPrefab, propVegetableBasket,basket,mug, cup, skin, box, chair, pillow, axe;
 
 
 	void Awake()
@@ -53,6 +53,8 @@ public class customNetworkManager : NetworkManager
 		GameObject.Find("GM").GetComponent<GameManager_References>().crossHairImage.SetActive(false);
 		GameObject.Find("GM").GetComponent<GameManager_References>().menu.SetActive(false);
 		GameObject.Find("GM").GetComponent<GameManager_References>().Lobby.SetActive(false);
+		GameObject.Find("GM").GetComponent<GameManager_References>().Join.SetActive(false);
+
 		Audio.SetActive(false);
 	}
 

@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class CharacterAiming : MonoBehaviour
 {
-    public float turnSpeed = 15;
+    public float turnSpeed = 2;
     Camera mainCamera;
     // Start is called before the first frame update
     void Start()
     {
-        mainCamera = Camera.main;
         Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame

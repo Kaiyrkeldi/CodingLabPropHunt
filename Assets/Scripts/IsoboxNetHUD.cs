@@ -50,6 +50,13 @@ namespace UnityEngine.Networking
 
 		public void JoinGame()
 		{
+			GameObject.Find("GM").GetComponent<GameManager_References>().Join.SetActive(true);
+			//SetIpAddress();
+			//manager.StartClient();
+		}
+
+		public void Connect()
+		{
 			SetIpAddress();
 			manager.StartClient();
 		}
@@ -69,5 +76,6 @@ namespace UnityEngine.Networking
 			manager.StopClient();
 			manager.StopHost();
 		}
+
 	}
 };

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4980559939119822925}
   - component: {fileID: 5318991315176741789}
   - component: {fileID: 3555542371565998533}
+  - component: {fileID: 6491984085542206792}
   m_Layer: 6
   m_Name: FlyCam
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 141064386211212978}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.42, y: 0.778, z: -0.825}
+  m_LocalPosition: {x: 0.42, y: 12, z: -0.825}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2749545141678876701}
@@ -63,7 +64,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 247
+    m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -93,6 +94,38 @@ MonoBehaviour:
   maximumX: 360
   minimumY: -60
   maximumY: 60
+--- !u!114 &6491984085542206792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141064386211212978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &2749545141678876771
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,6 +137,7 @@ GameObject:
   - component: {fileID: 2749545141678876790}
   - component: {fileID: 2749545141678876698}
   - component: {fileID: 2749545141678876872}
+  - component: {fileID: 5590131856732017315}
   m_Layer: 6
   m_Name: Camera
   m_TagString: Untagged
@@ -176,6 +210,38 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2749545141678876771}
   m_Enabled: 1
+--- !u!114 &5590131856732017315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2749545141678876771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &2749545141678876794
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,7 +263,6 @@ GameObject:
   - component: {fileID: 962234467409673173}
   - component: {fileID: 3212213671893110062}
   - component: {fileID: 1154307004717916882}
-  - component: {fileID: 8474018115408499689}
   m_Layer: 6
   m_Name: Pilliow
   m_TagString: Prop
@@ -342,13 +407,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0c802f1ad9b5674bac35695c2e71290, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flyCamera: {fileID: 5318991315176741789}
   componentsToDisable:
   - {fileID: 3212213671893110062}
   - {fileID: 962234467409673173}
   - {fileID: 2749545141678876698}
   - {fileID: 2749545141678876872}
   - {fileID: 5318991315176741789}
+  - {fileID: 0}
 --- !u!114 &2749545141678876894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -406,6 +471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 2749545141678876698}
+  flyCamera: {fileID: 5318991315176741789}
   jumpForce: 2
 --- !u!114 &3212213671893110062
 MonoBehaviour:
@@ -419,7 +485,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41eadccdc59ef054b81ed200503a643a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
   lookSpeed: 3
 --- !u!65 &1154307004717916882
 BoxCollider:
@@ -434,20 +499,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.66563547, y: 0.13771658, z: 0.9013635}
   m_Center: {x: 0.4563269, y: 0.06805018, z: 0.13940541}
---- !u!114 &8474018115408499689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2749545141678876794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13c26b0c2f33ac44caf05d4a91be1ce5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isNetworkTimeSynced: 0
-  time: {fileID: 0}
 --- !u!1 &2749545141678876795
 GameObject:
   m_ObjectHideFlags: 0

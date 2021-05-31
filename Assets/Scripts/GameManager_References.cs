@@ -14,4 +14,5 @@ public class GameManager_References : MonoBehaviour
     public GameObject hud;
     public GameObject menu;
     public GameObject Lobby;
+    public GameObject Join;
 }
