@@ -1,4 +1,5 @@
-![Gantt](https://user-images.githubusercontent.com/67787196/121776920-490a6500-cbb1-11eb-9094-b19f9a1a136c.png)
+![Uploading 6969jpg.jpg…]()
+
 # CodingLabPropHunt
 Project description:
 The theme of the project is Prop Hunt game created using Unity and C# technologies. Prop Hunt is a game about taking a shape of an object from the given world and hiding somewhere on a map. There are two types of characters in a game – props and hunters. Props hide and hunters should find props and fire on them. There is a time limit within which hunters look for a hidden people. If time runs out and all props were not found, they won, otherwise hunters win. If prop dies, user can still observe the game as a ghost. 
