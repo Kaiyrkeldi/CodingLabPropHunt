@@ -1,14 +1,13 @@
 using UnityEngine;
 using UnityEngine.Networking;
 
-[RequireComponent(typeof(AudioSync))]
 public class PlayerShoot : NetworkBehaviour
 {
     public Weapon weapon;
     public float fireRate = 1;
     public GameObject muzzleFlash;
     public AudioSource _audioSource;
-    private AudioSync audioSync;
+    public AudioClip aclip;
     [SerializeField]
     private Camera cam;
 
@@ -26,7 +25,6 @@ public class PlayerShoot : NetworkBehaviour
             Debug.LogError("PlayerShoot: No Camera");
             this.enabled = false;
         }
-        audioSync = this.GetComponent<AudioSync>();
     }
 
     void Update()
@@ -42,7 +40,7 @@ public class PlayerShoot : NetworkBehaviour
     [Client]
     void Shoot()
     {
-        audioSync.PlaySound(0);
+        _audioSource.PlayOneShot(aclip);
         RaycastHit _hit;
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out _hit, weapon.range, mask))
         {
@@ -67,12 +65,6 @@ public class PlayerShoot : NetworkBehaviour
     {
         Player player = GameManager.GetPlayer(_id);
         player.TakeDamage(damage);
-        GameObject.Find(_id).GetComponent<PropController>().speed *= 0.8f;
-        Invoke("ReturnSpeed(_id)", 5);
     }
 
-    void ReturnSpeed(string _id)
-    {
-        GameObject.Find(_id).GetComponent<PropController>().speed /= 0.8f;
-    }
 }

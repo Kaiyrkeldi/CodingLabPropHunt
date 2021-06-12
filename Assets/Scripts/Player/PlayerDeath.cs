@@ -8,10 +8,13 @@ public class PlayerDeath : NetworkBehaviour
 {
     private Player healthScript;
     private RawImage crossHairImage;
-    // Start is called before the first frame update
+
+    private CounterClients counterClients;
+
     void Start()
     {
         crossHairImage = GameObject.Find("crossHairImage").GetComponent<RawImage>();
+        counterClients = GameObject.Find("Counter").GetComponent<CounterClients>();
         healthScript = GetComponent<Player>();
         healthScript.EventDie += DisablePlayer;
     }
@@ -38,7 +41,8 @@ public class PlayerDeath : NetworkBehaviour
         if (isLocalPlayer)
         {
             crossHairImage.enabled = false;
-            GameObject.Find("GM").GetComponent<GameManager_References>().RespawnButton.SetActive(true);
         }
+        counterClients.CmdIncreaseDeadHunters();
     }
+
 }

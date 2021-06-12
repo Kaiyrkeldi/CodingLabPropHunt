@@ -12,9 +12,12 @@ public class PropDeath : NetworkBehaviour
     public Camera flyCamera;
     private GameObject respawnButton;
 
+    private CounterClients counterClients;
+
     // Start is called before the first frame update
     void Start()
     {
+        counterClients = GameObject.Find("Counter").GetComponent<CounterClients>();
         healthScript = GetComponent<Player>();
         healthScript.EventDie += DisablePlayer;
     }
@@ -30,8 +33,9 @@ public class PropDeath : NetworkBehaviour
 
     void DisablePlayer()
     {
-        //        healthScript.isDead = true;
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Prop");
         GetComponent<CharacterController>().enabled = false;
+        GetComponent<Rigidbody>().transform.position = Vector3.zero;
         GetComponent<Rigidbody>().useGravity = false;
         GetComponent<PropMotor>().enabled = false;
         GetComponent<PropController>().enabled = false;
@@ -42,9 +46,39 @@ public class PropDeath : NetworkBehaviour
             ren.enabled = false;
         if (isLocalPlayer)
         {
-            GameObject.Find("HUD").SetActive(false);
             Camera.enabled = false;
             flyCamera.enabled = true;
+            foreach (GameObject player in players)
+            {
+                SetLayerRecursively(player, 8);
+            }
+            GameObject.Find("GM").GetComponent<GameManager_References>().Heal.SetActive(false);
+            PropMotor.healing = false;
+            GameObject.Find("GM").GetComponent<GameManager_References>().WH.SetActive(false);
+            PropMotor.wallHack = false;
+            PropMotor.speedx2 = false;
+            PropMotor.jumpx2 = false;
+        }
+        counterClients.CmdIncreaseDeadProps();
+    }
+
+
+    void SetLayerRecursively(GameObject obj, int newLayer)
+    {
+        if (null == obj)
+        {
+            return;
+        }
+
+        obj.layer = newLayer;
+
+        foreach (Transform child in obj.transform)
+        {
+            if (null == child)
+            {
+                continue;
+            }
+            SetLayerRecursively(child.gameObject, newLayer);
         }
     }
 }

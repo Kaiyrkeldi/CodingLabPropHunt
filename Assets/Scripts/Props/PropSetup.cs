@@ -5,12 +5,10 @@ using UnityEngine.Networking;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Player))]
-[RequireComponent(typeof(NetworkPlayer))]
 public class PropSetup : NetworkBehaviour
 {
     private string remoteLayer = "RemotePlayer";
     private Camera sceneCamera;
-    public Camera flyCamera;
     GameObject health;
 
     [SerializeField]
@@ -28,16 +26,12 @@ public class PropSetup : NetworkBehaviour
         }
         else
         {
+            GameObject.Find("GM").GetComponent<GameManager_References>().Perks.SetActive(true);
             sceneCamera = Camera.main;
             if (sceneCamera != null)
                 sceneCamera.gameObject.SetActive(false);
         }
         health = GameObject.Find("healthText");
-        if (isLocalPlayer)
-        {
-            health.SetActive(true);
-        }
-        flyCamera.enabled = false;
     }
     void Update()
     {
@@ -60,6 +54,6 @@ public class PropSetup : NetworkBehaviour
     {
         if (sceneCamera != null)
             sceneCamera.gameObject.SetActive(true);
-        GameManager.UnRegisterPlayer(transform.name);
+        //GameManager.UnRegisterPlayer(transform.name);
     }
 }

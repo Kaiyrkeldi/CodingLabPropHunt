@@ -11,7 +11,7 @@ public class PlayerRespawn : NetworkBehaviour
     private RawImage crossHairImage;
     private GameObject respawnButton;
     public GameObject spawnpoint;
-    // Start is called before the first frame update
+
     void Start()
     {
         healthScript = GetComponent<Player>();
